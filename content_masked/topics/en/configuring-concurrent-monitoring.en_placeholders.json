@@ -1,0 +1,19 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/concurrent-monitoring/configuring-concurrent-monitoring",
+  "[IMAGE_URL_1]": "/img/content/38ebc948-cb27-42c3-b967-acba73dda33f.png",
+  "[LINK_URL_1]": "/support/kb/synthetic-monitoring/concurrent-monitoring/how-does-concurrent-monitoring-work",
+  "[LINK_URL_2]": "/support/kb/synthetic-monitoring/concurrent-monitoring/Errors-and-alerting-for-concurrent-monitors/",
+  "[LINK_URL_3]": "[IMAGE_URL_1]",
+  "[LINK_URL_4]": "/support/kb/synthetic-monitoring/concurrent-monitoring/understanding-your-concurrent-monitoring-results/",
+  "[LINK_URL_5]": "/support/kb/alerting/errors/unconfirmed-and-confirmed-errors",
+  "[LINK_URL_6]": "{{< AppUrl >}}/Report/Probes",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}"
+}

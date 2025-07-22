@@ -1,0 +1,13 @@
+{
+  "[URL_BASE_CHANGELOG]": "/changelog/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/february-2025-alert-variable-updates",
+  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/checkpoints/private-locations/private-locations-data-protection\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/alerting/integrations/custom-integrations/alerting-system-variables\" lang=\"de\" >}}",
+  "[INLINE_CODE_1]": "`2`",
+  "[INLINE_CODE_2]": "`{\"numberOfConsecutiveErrors\": \"2\"}`",
+  "[INLINE_CODE_3]": "`Ghent, Belgium`",
+  "[INLINE_CODE_4]": "`{\"checkpointName\": \"Ghent, Belgium\"}`",
+  "[INLINE_CODE_5]": "`{\"Content-Type\": \"text/html\"}`",
+  "[INLINE_CODE_6]": "`@alert.responseBody`",
+  "[INLINE_CODE_7]": "`@‌alert.responseHeaders`"
+}

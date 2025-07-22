@@ -1,0 +1,7 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitor-settings/basic-webpage-checks-versus-real-browser-checks",
+  "[LINK_URL_1]": "/producten/synthetics/synthetic-monitoring",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/browser-monitoring\" lang=\"nl\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions\" lang=\"nl\" >}}"
+}

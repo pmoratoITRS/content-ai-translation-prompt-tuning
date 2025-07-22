@@ -1,0 +1,7 @@
+{
+  "[IMAGE_URL_1]": "/img/content/scr-timeline-screenshots.min.png",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/waterfall-chart\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/browser-monitoring\" lang=\"de\" >}}",
+  "[LINK_URL_3]": "[IMAGE_URL_1]",
+  "[URL_1]": "https://www.uptrends.com/support/kb/monitoring-results/timeline-screenshots\","
+}

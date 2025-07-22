@@ -1,0 +1,6 @@
+{
+  "[URL_BASE_CHANGELOG]": "/changelog/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/november-2024-audit-log-permission-entities",
+  "[LINK_URL_1]": "{{< ref path=\"/support/kb/account/users/operators/permissions\" lang=\"nl\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/account/audit-log\" lang=\"nl\" >}}"
+}

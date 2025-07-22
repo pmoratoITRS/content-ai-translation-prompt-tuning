@@ -1,0 +1,7 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/account/users/sub-accounts/sub-accounts-use-cases",
+  "[LINK_URL_1]": "{{< ref path=\"/support/kb/account/permissions/how-to-team-setup\" lang=\"fr\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}"
+}

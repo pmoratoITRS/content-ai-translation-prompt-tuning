@@ -1,0 +1,7 @@
+{
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"button\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[URL_1]": "https://www.uptrends.com/support/kb/transactions/transaction-recorder-selector-determination\""
+}

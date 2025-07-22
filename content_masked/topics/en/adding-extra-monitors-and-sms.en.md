@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "title": "Adding extra monitors and credits"
+  },
+  "title": "Adding extra monitors and message credits",
+  "summary": "When you need extra monitors, API credits, transaction credits, or message credits either call us or buy them from within your Uptrends account.",
+  "url": "[URL_BASE_TOPICS]account/payments-and-subscriptions/adding-extra-monitors-and-sms",
+  "translationKey": "[FRONTMATTER_TRANSLATIONKEY]"
+}
+
+## Credits
+
+Uptrends uses credits to calculate the [pricing]([LINK_URL_1]) for different monitoring services. Credits are needed to create, configure, and schedule monitors for execution.
+
+Each synthetic monitor, such as [Uptime or Basic monitors]([LINK_URL_2]), [Browser (Full-Page Checks or FPCs) monitors]([LINK_URL_3]), [API monitors]([LINK_URL_4]), and [Transaction monitors]([LINK_URL_5]) has its own credit type:
+
+- Uptime monitors use **Uptime credits**
+- Browser monitors use **Browser credits**
+- API monitors use **API credits**
+- Transaction monitors use **Transaction credits**
+- **Credits** — only applies to all existing accounts using single pricing tier
+
+Your total credits depend on your [monitor mode]([LINK_URL_6]) and [monitor settings]([LINK_URL_7]). All monitors set to **Staging** and **Production** mode use credits. Meanwhile, any monitor in **Development** mode is considered inactive and doesn't use any credits.
+
+If you don't have enough monitor credits, you can easily [purchase more]([LINK_URL_8]) or just create and run your monitors in [Development mode]([LINK_URL_9]).
+
+## Calculate credits
+
+To view the credit status of all your Synthetic monitors, go to [SHORTCODE_1] Account setup > Subscription and invoices [SHORTCODE_2]. The donut chart shows your credits for each monitor type:
+
+![Monitor credits]([LINK_URL_10])
+
+As shown in the image, the user purchased five **Browser credits** or monitors. Two of these are currently in use, and they can still create three more FPC monitors. Similarly, for **Uptime credits**, the user purchased 10 credits or Uptime monitors. Four of these are currently in use, and they can still create six more basic monitors.
+
+For API and transaction monitors, calculating credits is slightly more complex. Credits are not calculated for every monitor used, but for each request or page load the monitor checks. 
+
+If you created any API monitor (Multi-step API (MSA) or Postman), each HTTP request counts as one credit. If you created one MSA monitor with three steps, it costs three credits. If you created two MSA monitors, each with three steps, total credits will be calculated as 3 steps for MSA-A and 3 steps for MSA-B, 6 API credits in total.
+
+This is also the case for transaction monitors: we count one credit for every new request (page load),[every waterfall, or every filmstrip]([LINK_URL_11]). If a transaction monitor goes through four pages (new page loads), has the waterfall and filmstrip enabled on the first step, this will be calculated as 4 page loads + 1 waterfall + 1 filmstrip, 6 Transaction credits in total. For more information about transaction credits, refer to [Understanding transaction monitor credit calculations]([LINK_URL_12]).
+
+
+
+
+
+## Add credits
+
+To monitor additional websites, servers, transactions, and other web services, there are two ways to buy more credits:
+
+1. **Contact Us**  
+    If you are currently subscribed and would like to make sure that you get the appropriate number of extra monitors or credits at a competitive rate, please contact your sales representative directly, or [file a ticket]([LINK_URL_13]).  
+
+2. **Add through the Uptrends web application**
+    1. Go to [SHORTCODE_3]  Account setup > Buy extras [SHORTCODE_4].
+    2. You can increase the number of Uptime, Browser, API, Transaction, and message credits for your account.
+    3. Click [SHORTCODE_5] Next [SHORTCODE_6].
+    4. Provide your billing information and select your desired **Payment method**.
+    5. Click [SHORTCODE_7] Confirm order [SHORTCODE_8].

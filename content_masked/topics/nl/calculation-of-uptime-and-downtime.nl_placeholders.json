@@ -1,0 +1,22 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/reporting/calculation-of-uptime-and-downtime",
+  "[IMAGE_URL_1]": "/img/content/uptime-calculation-min.svg",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/dashboards-and-reporting/sla/setting-up-an-sla\" lang=\"nl\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"products/synthetics/website-monitoring\" lang=\"nl\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/concurrent-monitoring/errors-and-alerting-for-concurrent-monitors\" lang=\"nl\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"tools/free-sla-uptime-calculator\" lang=\"nl\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"support/kb/dashboards-and-reporting/dashboards/custom-report-tiles\" lang=\"nl\" >}}",
+  "[LINK_URL_6]": "[IMAGE_URL_1]",
+  "[LINK_URL_7]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-management/maintenance-periods\" lang=\"nl\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< callout >}}",
+  "[SHORTCODE_4]": "{{< /callout >}}",
+  "[SHORTCODE_5]": "{{< callout >}}",
+  "[SHORTCODE_6]": "{{< /callout >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[SHORTCODE_9]": "{{< AppElement type=\"iconTileSettings\" >}}",
+  "[SHORTCODE_10]": "{{< /AppElement >}}"
+}

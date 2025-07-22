@@ -1,0 +1,21 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/alerting/create-alert-definitions",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/error-conditions\" lang=\"nl\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/alerting/alert-escalation-levels\" lang=\"nl\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"/support/kb/alerting/alert-escalation-levels\" lang=\"nl\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"/support/kb/dashboards-and-reporting/dashboards/exporting-dashboard-data\" lang=\"nl\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"/support/kb/alerting/integrations\" lang=\"nl\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< callout >}}",
+  "[SHORTCODE_4]": "{{< /callout >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"button\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[SHORTCODE_9]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_10]": "{{< /AppElement >}}",
+  "[SHORTCODE_11]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_12]": "{{< /AppElement >}}"
+}

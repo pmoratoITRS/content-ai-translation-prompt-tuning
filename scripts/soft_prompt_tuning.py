@@ -602,19 +602,19 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Auto-detect device (GPU if available, CPU otherwise)
-  python soft_prompt_tuning.py --content-dir content --target-language fr --output-dir models/fr
+  # Recommended: Use preprocessed (masked) data with auto-device detection
+  python soft_prompt_tuning.py --content-dir content_masked --target-language fr --output-dir models/fr --use-masked-data
 
-  # Force GPU training
-  python soft_prompt_tuning.py --device gpu --content-dir content --target-language fr --output-dir models/fr
+  # Force GPU training with masked data
+  python soft_prompt_tuning.py --device gpu --content-dir content_masked --target-language fr --output-dir models/fr --use-masked-data
 
-  # Force CPU training
+  # Force CPU training with raw data (not recommended)
   python soft_prompt_tuning.py --device cpu --content-dir content --target-language fr --output-dir models/fr
   
-  # Or use --force-cpu flag
-  python soft_prompt_tuning.py --force-cpu --content-dir content --target-language fr --output-dir models/fr
+  # Quick test with smaller dataset
+  python soft_prompt_tuning.py --content-dir content_masked --target-language fr --output-dir models/fr-test --use-masked-data --max-examples 100
 
-Note: Parameters are automatically adjusted based on the selected device for optimal performance.
+IMPORTANT: Run preprocess_golden_data.py first to create masked data for optimal training results.
         """
     )
     
@@ -622,7 +622,7 @@ Note: Parameters are automatically adjusted based on the selected device for opt
     parser.add_argument('--model-name', default='t5-small',
                        help='Base model for soft prompt tuning')
     parser.add_argument('--content-dir', required=True, type=Path,
-                       help='Path to content directory with golden data')
+                       help='Path to content directory with golden data (use content_masked for preprocessed data)')
     parser.add_argument('--target-language', required=True, choices=['fr', 'de', 'nl'],
                        help='Target language')
     parser.add_argument('--output-dir', required=True, type=Path,
@@ -653,6 +653,10 @@ Note: Parameters are automatically adjusted based on the selected device for opt
                        help='Device to use for training (auto, gpu/cuda, cpu)')
     parser.add_argument('--force-cpu', action='store_true',
                        help='Force CPU training even if GPU is available')
+    
+    # Data preprocessing
+    parser.add_argument('--use-masked-data', action='store_true',
+                       help='Indicates that content directory contains preprocessed (masked) data')
     
     # GPU optimization parameters
     parser.add_argument('--no-mixed-precision', action='store_true',

@@ -1,0 +1,9 @@
+{
+  "[URL_BASE_CHANGELOG]": "/changelog/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/december-2024-msa-error-handling-feature",
+  "[IMAGE_URL_1]": "/img/content/scr-error-handling-checkbox.min.png",
+  "[LINK_URL_1]": "[IMAGE_URL_1]",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/transactions/using-ignore-errors-for-optional-steps-and-actions#how-is-ignore-errors-like-making-a-conditional-statement\" lang=\"nl\" >}}",
+  "[INLINE_CODE_1]": "`Foutafhandeling`",
+  "[INLINE_CODE_2]": "`Er is een fout opgetreden tijdens deze stap`"
+}

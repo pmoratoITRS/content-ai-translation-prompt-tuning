@@ -1,0 +1,8 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/synthetic-monitoring/checkpoints/private-locations/private-locations-security",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/checkpoints/private-locations/private-checkpoints-docker#security-considerations\" lang=\"nl\" >}}",
+  "[LINK_URL_2]": "https://www.uptrends.com/downloads/uptrends-iso-certificate-2022.pdf",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/checkpoints/private-locations/private-locations-data-protection\" lang=\"nl\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/understanding-web-application-monitoring#login-credentials\" lang=\"nl\" >}}"
+}

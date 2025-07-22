@@ -1,0 +1,8 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitor-management/monitor-management-overview",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/basics/adding-monitors\" lang=\"fr\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings\" lang=\"fr\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-management/monitor-groups\" lang=\"fr\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-management/monitor-templates\" lang=\"fr\" >}}"
+}

@@ -1,0 +1,12 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/api/monitor-api",
+  "[LINK_URL_1]": "{{< ref path=\"/support/kb/api/changelog\" lang=\"en\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitor-settings/monitor-settings-overview\" lang=\"en\" >}}",
+  "[LINK_URL_3]": "https://api.uptrends.com/v4/swagger/index.html?url=/v4/swagger/v1/swagger.json#/Monitor",
+  "[LINK_URL_4]": "{{< ref path=\"/support/kb/api/monitor-api-fields\" lang=\"en\" >}}",
+  "[LINK_URL_5]": "https://api.uptrends.com/v4/swagger/index.html?url=/v4/swagger/v1/swagger.json#/Monitor",
+  "[LINK_URL_6]": "https://api.uptrends.com/v4/swagger/index.html?url=/v4/swagger/v1/swagger.json#/MonitorGroup",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}"
+}

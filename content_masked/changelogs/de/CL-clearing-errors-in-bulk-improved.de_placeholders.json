@@ -1,0 +1,9 @@
+{
+  "[URL_BASE_CHANGELOG]": "/changelog/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/january-2024-clearing-errors-in-bulk-improved",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/alerting/errors/unconfirmed-and-confirmed-errors\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/alerting/errors/clearing-errors\" lang=\"de\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/dashboards-and-reporting/sla/setting-up-an-sla\" lang=\"de\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"buttonSecondary\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}"
+}

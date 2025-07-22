@@ -1,0 +1,21 @@
+{
+  "[IMAGE_URL_1]": "/img/content/scr-fpc-add-dns-bypass.min.png",
+  "[LINK_URL_1]": "{{< ref path=\"#scenarios\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/browser-monitoring\" lang=\"de\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions\" lang=\"de\">}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/uptime-monitoring/http-and-https/monitoring-websites-other-than-the-production-server\" lang=\"de\" >}}",
+  "[LINK_URL_5]": "[IMAGE_URL_1]",
+  "[LINK_URL_6]": "{{< ref path=\"support/kb/synthetic-monitoring/checkpoints/checkpoint-information\" lang=\"de\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"editbutton\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[SHORTCODE_9]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_10]": "{{< /AppElement >}}",
+  "[ANCHOR_1]": "{id=\"scenarios\"}",
+  "[URL_1]": "https://www.uptrends.com/support/kb/monitor-settings/dns-bypass\""
+}

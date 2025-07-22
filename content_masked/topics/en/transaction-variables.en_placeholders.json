@@ -1,0 +1,23 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/transactions/transaction-variables",
+  "[IMAGE_URL_1]": "/img/content/scr-transaction-variable-creation.min.png",
+  "[IMAGE_URL_2]": "/img/content/scr-transform-trn-variable.min.png",
+  "[IMAGE_URL_3]": "/img/content/scr-trn-variable-use.min.png",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/content-checks#test-element-content\" lang=\"en\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/understanding-the-step-editor#css-selectors-and-xpath-queries\" lang=\"en\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/understanding-the-step-editor#adding-action\" lang=\"en\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/understanding-the-step-editor#css-selectors-and-xpath-queries\" lang=\"en\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"/contact\" lang=\"en\" >}}",
+  "[LINK_URL_6]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/content-checks\" lang=\"en\" >}}",
+  "[LINK_URL_7]": "[IMAGE_URL_1]",
+  "[LINK_URL_8]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/action-adjust-variable-content\" lang=\"en\" >}}",
+  "[LINK_URL_9]": "[IMAGE_URL_2]",
+  "[LINK_URL_10]": "[IMAGE_URL_3]",
+  "[INLINE_CODE_1]": "`{{variableName}}`",
+  "[INLINE_CODE_2]": "`#confirmPurchase`",
+  "[INLINE_CODE_3]": "`#orderNumber`",
+  "[INLINE_CODE_4]": "`{{orderNumberLong}}`",
+  "[INLINE_CODE_5]": "`{{orderNumberLong}}`",
+  "[INLINE_CODE_6]": "`{{orderNumberLong}}`"
+}

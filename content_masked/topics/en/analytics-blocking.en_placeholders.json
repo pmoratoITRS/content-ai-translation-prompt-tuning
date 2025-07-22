@@ -1,0 +1,23 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitor-settings/analytics-blocking",
+  "[IMAGE_URL_1]": "/img/content/e13feb2b-6a95-479e-92aa-eea4deac6169.png",
+  "[LINK_URL_1]": "{{< ref path=\"/pricing\" lang=\"en\" >}}",
+  "[LINK_URL_2]": "[IMAGE_URL_1]",
+  "[LINK_URL_3]": "/contact",
+  "[LINK_URL_4]": "/contact",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< callout >}}",
+  "[SHORTCODE_4]": "{{< /callout >}}",
+  "[SHORTCODE_5]": "{{< callout >}}",
+  "[SHORTCODE_6]": "{{< /callout >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[SHORTCODE_9]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_10]": "{{< /AppElement >}}",
+  "[SHORTCODE_11]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_12]": "{{< /AppElement >}}",
+  "[SHORTCODE_13]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_14]": "{{< /AppElement >}}"
+}

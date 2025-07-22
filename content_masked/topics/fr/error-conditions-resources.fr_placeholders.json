@@ -1,0 +1,19 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitor-settings/error-conditions-resources",
+  "[IMAGE_URL_1]": "/img/content/scr_errorconditions-resources-https.min.png",
+  "[IMAGE_URL_2]": "/img/content/scr_errorconditions-resources-all.min.png",
+  "[IMAGE_URL_3]": "/img/content/scr_errorconditions-resources-individual-fail.min.png",
+  "[IMAGE_URL_4]": "/img/content/scr_errorconditions-resources-individual-percentage.min.png",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/error-conditions\" lang=\"fr\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/error-conditions#error-conditions-by-category\" lang=\"fr\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/waterfall-chart\" lang=\"fr\" >}}",
+  "[LINK_URL_4]": "[IMAGE_URL_1]",
+  "[LINK_URL_5]": "[IMAGE_URL_2]",
+  "[LINK_URL_6]": "[IMAGE_URL_3]",
+  "[LINK_URL_7]": "[IMAGE_URL_4]",
+  "[SHORTCODE_1]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"buttonSecondary\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}"
+}

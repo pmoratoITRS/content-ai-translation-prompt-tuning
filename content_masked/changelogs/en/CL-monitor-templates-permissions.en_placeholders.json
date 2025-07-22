@@ -1,0 +1,6 @@
+{
+  "[URL_BASE_CHANGELOG]": "/changelog/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/april-2024-monitor-template-permissions",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-management/monitor-templates\" lang=\"en\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/account/users/operators/permissions\" lang=\"en\" >}}"
+}

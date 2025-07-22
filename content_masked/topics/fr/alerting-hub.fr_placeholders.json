@@ -1,0 +1,12 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/alerting/alerting-hub",
+  "[IMAGE_URL_1]": "/img/content/scr-alerting-hub.min.png",
+  "[LINK_URL_1]": "[IMAGE_URL_1]",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/monitor-permissions\" lang=\"fr\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/alerting/alert-definition-permissions\" lang=\"fr\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/alerting/monitor-alerting-coverage\" lang=\"fr\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/monitor-mode#monitormodeproduction\" lang=\"fr\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}"
+}

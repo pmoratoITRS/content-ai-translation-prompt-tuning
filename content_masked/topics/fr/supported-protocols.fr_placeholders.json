@@ -1,0 +1,17 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitor-settings/supported-protocols",
+  "[LINK_URL_1]": "/support/kb/demarrage",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< callout >}}",
+  "[SHORTCODE_4]": "{{< /callout >}}",
+  "[SHORTCODE_5]": "{{< callout >}}",
+  "[SHORTCODE_6]": "{{< /callout >}}",
+  "[SHORTCODE_7]": "{{< callout >}}",
+  "[SHORTCODE_8]": "{{< /callout >}}",
+  "[SHORTCODE_9]": "{{< callout >}}",
+  "[SHORTCODE_10]": "{{< /callout >}}",
+  "[SHORTCODE_11]": "{{< callout >}}",
+  "[SHORTCODE_12]": "{{< /callout >}}"
+}

@@ -1,0 +1,14 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/account/single-sign-on-overview",
+  "[LINK_URL_1]": "https://azure.microsoft.com/de-de/services/active-directory/",
+  "[LINK_URL_2]": "https://www.okta.com/",
+  "[LINK_URL_3]": "https://www.onelogin.com/",
+  "[LINK_URL_4]": "https://www.secureauth.com/",
+  "[LINK_URL_5]": "https://duo.com/docs/dag",
+  "[LINK_URL_6]": "https://de.wikipedia.org/wiki/Security_Assertion_Markup_Language",
+  "[LINK_URL_7]": "/support/kb/vault",
+  "[LINK_URL_8]": "/support/kb/account/einstellungen/sso-setup-guide",
+  "[LINK_URL_9]": "/contact",
+  "[ANCHOR_1]": "{id=\"how-sso-users-log-in\"}"
+}

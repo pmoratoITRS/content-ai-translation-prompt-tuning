@@ -1,0 +1,8 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/error-analysis/working-with-error-snapshots",
+  "[IMAGE_URL_1]": "/img/content/scr_check-details-with-error-snapshot.min.png",
+  "[LINK_URL_1]": "[IMAGE_URL_1]",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}"
+}

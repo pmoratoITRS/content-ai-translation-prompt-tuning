@@ -1,0 +1,8 @@
+{
+  "[IMAGE_URL_1]": "/img/content/scr-fpc-plus.min.png",
+  "[LINK_URL_1]": "[IMAGE_URL_1]",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/browser-monitoring/working-with-domain-groups\" lang=\"de\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[URL_1]": "https://www.uptrends.com/support/kb/full-page-check/fpc-plus\","
+}

@@ -1,0 +1,22 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitor-settings/error-conditions-console-content",
+  "[IMAGE_URL_1]": "/img/content/scr_errorconditions-console-content.min.png",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/error-conditions\" lang=\"en\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/error-conditions#error-conditions-by-category\" lang=\"en\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/error-conditions/content-match\" lang=\"en\" >}}",
+  "[LINK_URL_4]": "[IMAGE_URL_1]",
+  "[LINK_URL_5]": "{{< ref path=\"#contains-content\" lang=\"en\" >}}",
+  "[LINK_URL_6]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/check-details\" lang=\"en\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"buttonSecondary\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[SHORTCODE_9]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_10]": "{{< /AppElement >}}",
+  "[ANCHOR_1]": "{id=\"contains-content\"}"
+}

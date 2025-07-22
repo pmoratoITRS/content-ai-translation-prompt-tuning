@@ -1,0 +1,8 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/transactions/tutorial-record-user-journey-in-shop/tutorial-introduction",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/tutorial-record-user-journey-in-shop/recording-your-transaction\" lang=\"nl\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/tutorial-record-user-journey-in-shop/test-script\" lang=\"nl\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/tutorial-record-user-journey-in-shop/testing-your-transaction\" lang=\"nl\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/tutorial-record-user-journey-in-shop/making-sense-of-your-transaction-dashboards-and-reports\" lang=\"nl\" >}}"
+}

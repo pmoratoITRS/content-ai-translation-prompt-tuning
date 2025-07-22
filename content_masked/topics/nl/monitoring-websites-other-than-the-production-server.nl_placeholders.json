@@ -1,0 +1,16 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/http-and-https/monitoring-websites-other-than-the-production-server",
+  "[IMAGE_URL_1]": "/img/content/377b33f5-3e3f-488f-ab03-e683d9542dc2.png",
+  "[IMAGE_URL_2]": "/img/content/a18cdb82-fbb6-45c4-a2f2-f4031a33d34e.png",
+  "[LINK_URL_1]": "[IMAGE_URL_1]",
+  "[LINK_URL_2]": "[IMAGE_URL_2]",
+  "[SHORTCODE_1]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}"
+}

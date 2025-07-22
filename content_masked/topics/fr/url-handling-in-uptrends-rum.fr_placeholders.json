@@ -1,0 +1,15 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/rum/url-handling-in-uptrends-rum",
+  "[LINK_URL_1]": "/contact",
+  "[INLINE_CODE_1]": "`http://`",
+  "[INLINE_CODE_2]": "`https://`",
+  "[INLINE_CODE_3]": "`?paramètre=valeur`",
+  "[INLINE_CODE_4]": "`#fragment`",
+  "[INLINE_CODE_5]": "`***`",
+  "[INLINE_CODE_6]": "`www.mysite.com/coupon-12345`",
+  "[INLINE_CODE_7]": "`www.mysite.com/coupon-123456`",
+  "[INLINE_CODE_8]": "`www.mysite.com/coupon-***`",
+  "[INLINE_CODE_9]": "`www.mysite.com/coupon-19740f6e-e7e6-41f2-84e4-de0b290eb05e`",
+  "[INLINE_CODE_10]": "`www.mysite.com/coupon-***`"
+}

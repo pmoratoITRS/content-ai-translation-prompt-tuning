@@ -1,0 +1,22 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/http-and-https/http-and-https-overview",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/basics/monitor-types\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/checkpoints/\" lang=\"de\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"/support/kb/synthetic-monitoring/uptime-monitoring/http-and-https/how-an-http-monitor-works\" lang=\"de\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"/support/kb/synthetic-monitoring/browser-monitoring\" lang=\"de\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/basic-webpage-checks-versus-real-browser-checks\" lang=\"de\" >}}",
+  "[LINK_URL_6]": "{{< ref path=\"support/kb/synthetic-monitoring/uptime-monitoring/ssl-monitors\" lang=\"de\" >}}",
+  "[LINK_URL_7]": "{{< ref path=\"/support/kb/synthetic-monitoring/uptime-monitoring/http-and-https/http-monitor-add\" lang=\"de\" >}}",
+  "[LINK_URL_8]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitor-settings/user-agents-and-real-browser-checks#what-is-a-user-agent\" lang=\"de\" >}}",
+  "[LINK_URL_9]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitor-settings/encryption-and-your-websites-security\" lang=\"de\" >}}",
+  "[LINK_URL_10]": "{{< ref path=\"/support/kb/synthetic-monitoring/uptime-monitoring/http-and-https/monitoring-websites-other-than-the-production-server\" lang=\"de\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[INLINE_CODE_1]": "`http://`",
+  "[INLINE_CODE_2]": "`https://`"
+}

@@ -1,0 +1,14 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/mail-server-monitors",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/basics/adding-monitors\" lang=\"en\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/encryption-and-your-websites-security\" lang=\"en\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}"
+}

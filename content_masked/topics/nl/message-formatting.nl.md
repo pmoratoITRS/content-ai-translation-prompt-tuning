@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "Berichtopmaak"
+  },
+  "title": "Berichtopmaak",
+  "summary": "Aanpasbare integraties - Hoe u uw bericht correct opmaakt",
+  "url": "[URL_BASE_TOPICS]alerting/integraties/aangepaste-integraties/berichtopmaak",
+  "translationKey": "[FRONTMATTER_TRANSLATIONKEY]"
+}
+
+Aangezien het uitgaande alertbericht meestal in JSON zal zijn opgemaakt, moeten we regels volgen zodat deze JSON geldig blijft. Daarvoor moeten bepaalde tekens (zoals regeleinden of aanhalingstekens) worden gecodeerd voordat ze kunnen worden opgenomen in het uitgaande, JSON-geformatteerde alertbericht. Gebeurt dit niet, dan maken ze de JSON-structuur van het uitgaande bericht ongeldig, wat ertoe kan leiden dat het ontvangende eindpunt een fout genereert en de binnenkomende alert niet correct verwerkt. Dit artikel gaat over de ingebouwde functies voor automatische berichtopmaak.
+
+## Automatische opmaak toepassen [ANCHOR_1]
+
+Als bijvoorbeeld het ‘Notities’-veld van een controleregel (die u aan het alertbericht kunt toevoegen met de systeemvariabele @monitor.notes) dergelijke tekens bevat (regeleinden, aanhalingstekens, ...), wordt dit op zodanige wijze afgehandeld dat de JSON-structuur van het uitgaande bericht zou worden verbroken.  
+  
+Een voorbeeld:  
+[INLINE_CODE_1]  
+
+Zou afgehandeld kunnen worden tot:  
+[CODE_BLOCK_1]
+  
+Dit verbreekt geldige JSON-structuur en zal waarschijnlijk leiden tot onjuiste afhandeling van de alert aan de ontvangende kant. Om dit probleem op te lossen hebben we de optie opgenomen om stukjes tekst te coderen (of te decoderen) om correct in een JSON- of XML-geformatteerd bericht te passen. Wordt deze functie gebruikt, dan worden alle tekens die moeten worden voorzien van escape-tekens om de JSON geldig te houden, automatisch gecodeerd.  
+  
+Om deze functie te gebruiken verpakt u de gewenste systeemvariabele of tekst in de volgende syntax:  
+[INLINE_CODE_2]  
+  
+Zo moet bijvoorbeeld de eerder genoemde systeemvariabele van de controleregelnotities als volgt worden verpakt:  
+[INLINE_CODE_3]  
+  
+Met de functie @JsonEncode, wordt het eerder genoemde stukje JSON dat de verwijzing naar de controleregelnotities bevat, afgehandeld tot:  
+[INLINE_CODE_4]  
+  
+Zoals u ziet, hebben we de controleregelnotities nu correct opgenomen, zodanig gecodeerd dat de JSON-structuur niet wordt verbroken.  
+  
+Gebruikt u XML in plaats van JSON, dan hoeft u niet bang te zijn – we ondersteunen een vergelijkbare functie voor XML-codering! U kunt deze functie gebruiken door uw gewenste systeemvariabelen te verpakken in [INLINE_CODE_5].

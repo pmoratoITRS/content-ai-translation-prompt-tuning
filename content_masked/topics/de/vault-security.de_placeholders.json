@@ -1,0 +1,8 @@
+{
+  "[LINK_URL_1]": "{{< ref path=\"/support/kb/account/vault\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/api/vault-api\" lang=\"de\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"/support/kb/account/vault#credential-set\" lang=\"de\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"/support/kb/account/vault#vault-permissions\" lang=\"de\" >}}",
+  "[INLINE_CODE_1]": "`*****`",
+  "[URL_1]": "https://www.uptrends.com/support/kb/account/vault-security\""
+}

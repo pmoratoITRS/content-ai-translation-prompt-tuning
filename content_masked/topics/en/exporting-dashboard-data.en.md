@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "Exporting dashboard data"
+  },
+  "title": "Exporting dashboard data",
+  "summary": "Find out how to share dashboard data by exporting it in different ways and formats.",
+  "url": "[URL_BASE_TOPICS]dashboards-and-reporting/dashboards/exporting-dashboard-data",
+  "translationKey": "[FRONTMATTER_TRANSLATIONKEY]"
+}
+
+All the data in the world will do you no good unless you can control the way it is presented. In this article you will read about the various ways you can export your Uptrends website monitoring data, including scheduled reports!
+
+## Options for exporting data
+
+It is possible to export your Uptrends dashboard data, both default and custom in a variety of formats, including **downloading** it via **PDF** or **Excel (.xls)**, or sending a **PDF or XLS file via e-mail**.
+
+## Exporting data in PDF or XLS format
+
+To export your data in Uptrends:
+
+1. Navigate to the dashboard you would like to export within the Uptrends application.
+2. Click on the [SHORTCODE_1][SHORTCODE_2] hamburger menu located in the **Quick Action menu** of the dashboard. 
+
+   ![screenshot hamburger menu opened]([LINK_URL_1])
+
+3. Click on [SHORTCODE_3] Export > PDF export [SHORTCODE_4] or [SHORTCODE_5] Export > Excel export [SHORTCODE_6] to select your method of export. The download will begin immediately.
+
+## Scheduling a report to be sent to me
+
+Scheduling a report works roughly the same way as exporting to PDF or XLS, with a few changes.
+
+1. Navigate to the dashboard you would like to export within the Uptrends application.
+2. Click on the [SHORTCODE_7][SHORTCODE_8] hamburger menu located in the **Quick Action menu** of the dashboard. 
+   ![screenshot hamburger menu opened]([LINK_URL_2])
+3. Select [SHORTCODE_9] Export > Schedule report [SHORTCODE_10].
+4. When the configuration screen opens, you may then select the file type, active status, recurrence, time, and report period for your scheduled report. 
+5. Click the [SHORTCODE_11]Save[SHORTCODE_12] button when you are done.
+
+## Managing an existing scheduled report
+
+To manage an existing scheduled report, or to download or send a report on-demand: 
+
+1. Go to [SHORTCODE_13] Account setup > Scheduled reports [SHORTCODE_14]. 
+2. On this page you will see a full list of your scheduled reports, including information regarding: which dashboard they use, which operator created it, when it is scheduled, who receives it, when it will be sent next, and whether or not it is active.
+3. To edit a report, click on the dashboard's name. You will then be brought to the scheduled report configuration page.
+4. To send a scheduled report on demand, click on the *Send report* button next to the report you wish you send.
+
+## Deactivating a scheduled report
+
+In case you no longer want to receive a scheduled report, please follow the instructions in [Stop receiving a scheduled report]([LINK_URL_3]).

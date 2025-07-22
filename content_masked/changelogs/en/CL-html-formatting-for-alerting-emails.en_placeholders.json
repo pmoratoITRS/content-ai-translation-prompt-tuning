@@ -1,0 +1,8 @@
+{
+  "[URL_BASE_CHANGELOG]": "/changelog/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/february-2024-html-formatting-for-alerting-emails",
+  "[SHORTCODE_1]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}"
+}

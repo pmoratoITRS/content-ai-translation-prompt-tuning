@@ -1,0 +1,5 @@
+{
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/understanding-your-transactions\" lang=\"en\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/transaction-monitoring-caveats-tips-and-tricks\" lang=\"de\" >}}",
+  "[URL_1]": "https://www.uptrends.com/support/kb/transactions/choosing-which-transactions-you-can-or-should-test\""
+}

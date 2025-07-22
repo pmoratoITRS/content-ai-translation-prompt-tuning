@@ -1,0 +1,21 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/account/users/operators/main-settings",
+  "[LINK_URL_1]": "{{< ref path=\"/support/kb/account/users/operators/add-or-delete-operator\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/account/users/operators/add-or-delete-operator\" lang=\"de\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"/support/kb/dashboards-and-reporting/dashboards/\" lang=\"de\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/account/settings/timezones\" lang=\"de\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"/pricing#plans\" lang=\"de\" >}}",
+  "[LINK_URL_6]": "{{< ref path=\"/support/kb/account/users/operators/add-or-delete-operator\" lang=\"de\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"dropdown\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[SHORTCODE_9]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_10]": "{{< /AppElement >}}",
+  "[ANCHOR_1]": "{id=\"timezone\"}"
+}
