@@ -11,6 +11,7 @@ import json
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
+from torch.cuda.amp import autocast, GradScaler
 from transformers import (
     AutoTokenizer, AutoModelForSeq2SeqLM, 
     get_linear_schedule_with_warmup
@@ -32,21 +33,53 @@ class SoftPromptConfig:
     content_dir: Path
     output_dir: Path
     
+    # Device selection
+    device_preference: str = 'auto'  # 'auto', 'gpu', 'cuda', 'cpu'
+    force_cpu: bool = False
+    
     # Soft prompt parameters
     soft_prompt_length: int = 20  # Number of learned prompt tokens
     learning_rate: float = 0.3    # Higher LR for prompt tokens
     model_learning_rate: float = 1e-5  # Lower LR for model (if unfrozen)
     
-    # Training parameters
-    num_epochs: int = 10
-    batch_size: int = 2  # Reduced for CPU training
-    max_length: int = 512  # Reduced for CPU training  
-    warmup_steps: int = 100
+    # Training parameters (will be auto-adjusted based on device)
+    num_epochs: int = 15
+    batch_size: int = 16
+    max_length: int = 1024
+    warmup_steps: int = 500
     freeze_model: bool = True  # Only train prompt embeddings
+    gradient_accumulation_steps: int = 2
     
     # Data parameters
-    max_examples: int = 200  # Reduced for CPU training
+    max_examples: int = 5000
     validation_split: float = 0.1
+    
+    # Device-specific parameters (will be auto-adjusted)
+    mixed_precision: bool = True
+    dataloader_num_workers: int = 4
+    pin_memory: bool = True
+    
+    def auto_adjust_for_device(self, device_type: str) -> None:
+        """Auto-adjust parameters based on the selected device"""
+        if device_type == 'cpu':
+            # CPU-optimized parameters
+            self.batch_size = min(self.batch_size, 4)  # Don't exceed 4 for CPU
+            self.gradient_accumulation_steps = max(self.gradient_accumulation_steps, 2)  # Maintain effective batch size
+            self.max_length = min(self.max_length, 512)  # Shorter sequences for CPU
+            self.max_examples = min(self.max_examples, 1000)  # Fewer examples for CPU
+            self.warmup_steps = min(self.warmup_steps, 100)  # Fewer warmup steps
+            self.dataloader_num_workers = min(self.dataloader_num_workers, 2)  # Fewer workers for CPU
+            self.mixed_precision = False  # No mixed precision on CPU
+            self.pin_memory = False  # No memory pinning for CPU
+        else:
+            # GPU parameters - keep as specified or use defaults
+            # Mixed precision only available on CUDA-capable GPUs
+            if device_type == 'cuda':
+                self.mixed_precision = self.mixed_precision  # Keep user preference
+                self.pin_memory = self.pin_memory  # Keep user preference
+            else:
+                self.mixed_precision = False
+                self.pin_memory = False
 
 
 class TranslationDataset(Dataset):
@@ -186,15 +219,60 @@ class SoftPromptTrainer:
             base_model, self.tokenizer, config.soft_prompt_length
         )
         
-        # Move to GPU if available
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        # Device selection logic
+        self.device = self._select_device()
         
-        if self.device.type == 'cpu':
-            self.logger.warning("⚠️  Training on CPU - this will be slower")
-            self.logger.info("💡 Consider reducing batch_size and max_examples for CPU training")
+        # Auto-adjust parameters based on device
+        self.config.auto_adjust_for_device(self.device.type)
+        self.logger.info(f"📝 Parameters auto-adjusted for {self.device.type.upper()} training")
             
         self.model.to(self.device)
         self.logger.info(f"Using device: {self.device}")
+        
+        # Setup mixed precision training
+        self.scaler = GradScaler() if self.config.mixed_precision and self.device.type == 'cuda' else None
+        if self.scaler:
+            self.logger.info("🚀 Mixed precision training enabled")
+        elif self.config.mixed_precision and self.device.type == 'cpu':
+            self.logger.warning("Mixed precision requested but not available on CPU")
+        
+        # Log training configuration
+        if self.device.type == 'cuda':
+            # Check GPU memory and provide recommendations
+            gpu_memory_gb = torch.cuda.get_device_properties(0).total_memory / 1024**3
+            self.logger.info(f"🎯 GPU Training Configuration:")
+            self.logger.info(f"  - GPU: {torch.cuda.get_device_name(0)} ({gpu_memory_gb:.1f}GB)")
+            self.logger.info(f"  - Batch size: {self.config.batch_size}")
+            self.logger.info(f"  - Gradient accumulation steps: {self.config.gradient_accumulation_steps}")
+            self.logger.info(f"  - Effective batch size: {self.config.batch_size * self.config.gradient_accumulation_steps}")
+            self.logger.info(f"  - Max sequence length: {self.config.max_length}")
+            self.logger.info(f"  - Max training examples: {self.config.max_examples}")
+            self.logger.info(f"  - Data loader workers: {self.config.dataloader_num_workers}")
+            self.logger.info(f"  - Memory pinning: {self.config.pin_memory}")
+            self.logger.info(f"  - Mixed precision: {self.config.mixed_precision}")
+            
+            # Provide memory-based recommendations
+            if gpu_memory_gb < 8:
+                self.logger.warning("⚠️  Low GPU memory detected. Consider:")
+                self.logger.info("   --batch-size 8 --gradient-accumulation-steps 4 --max-length 512")
+            elif gpu_memory_gb >= 24:
+                self.logger.info("🚀 High GPU memory available. You could increase:")
+                self.logger.info("   --batch-size 32 --gradient-accumulation-steps 1 --max-length 1024")
+        else:
+            self.logger.info(f"🖥️  CPU Training Configuration:")
+            self.logger.info(f"  - Batch size: {self.config.batch_size}")
+            self.logger.info(f"  - Gradient accumulation steps: {self.config.gradient_accumulation_steps}")
+            self.logger.info(f"  - Effective batch size: {self.config.batch_size * self.config.gradient_accumulation_steps}")
+            self.logger.info(f"  - Max sequence length: {self.config.max_length}")
+            self.logger.info(f"  - Max training examples: {self.config.max_examples}")
+            self.logger.info(f"  - Data loader workers: {self.config.dataloader_num_workers}")
+            self.logger.info(f"  - Mixed precision: {self.config.mixed_precision} (CPU doesn't support)")
+            self.logger.warning("⚠️  CPU training will be significantly slower than GPU")
+            self.logger.info("💡 To force GPU: --device gpu (or remove --force-cpu)")
+            
+        # Show device selection made
+        device_choice = "auto-detected" if self.config.device_preference == 'auto' else "user-specified"
+        self.logger.info(f"🔧 Device selection: {device_choice} → {self.device}")
         
         # Load and prepare data
         self.train_loader, self.val_loader = self.prepare_data()
@@ -209,6 +287,43 @@ class SoftPromptTrainer:
             format='%(asctime)s - %(levelname)s - %(message)s'
         )
         self.logger = logging.getLogger(__name__)
+    
+    def _select_device(self) -> torch.device:
+        """Select device based on user preference and availability"""
+        cuda_available = torch.cuda.is_available()
+        
+        # Handle force CPU flag
+        if self.config.force_cpu:
+            self.logger.info("🔧 Force CPU mode enabled")
+            return torch.device('cpu')
+        
+        # Handle device preference
+        device_pref = self.config.device_preference.lower()
+        
+        if device_pref == 'cpu':
+            self.logger.info("🔧 CPU training requested by user")
+            return torch.device('cpu')
+        
+        elif device_pref in ['gpu', 'cuda']:
+            if cuda_available:
+                self.logger.info("🚀 GPU training requested and CUDA is available")
+                return torch.device('cuda')
+            else:
+                self.logger.warning("⚠️  GPU training requested but CUDA not available")
+                self.logger.info("🔄 Falling back to CPU training")
+                return torch.device('cpu')
+        
+        elif device_pref == 'auto':
+            if cuda_available:
+                self.logger.info("🎯 Auto-detected CUDA GPU - using GPU training")
+                return torch.device('cuda')
+            else:
+                self.logger.info("🔍 No CUDA GPU detected - using CPU training")
+                return torch.device('cpu')
+        
+        else:
+            self.logger.warning(f"Unknown device preference: {device_pref}")
+            return torch.device('cuda' if cuda_available else 'cpu')
     
     def load_paired_data(self) -> Tuple[List[str], List[str]]:
         """Load paired English-translation data from golden dataset"""
@@ -291,12 +406,22 @@ class SoftPromptTrainer:
             val_english, val_translated, self.tokenizer, self.config.max_length
         )
         
-        # Create data loaders
+        # Create data loaders with GPU optimizations
         train_loader = DataLoader(
-            train_dataset, batch_size=self.config.batch_size, shuffle=True
+            train_dataset, 
+            batch_size=self.config.batch_size, 
+            shuffle=True,
+            num_workers=self.config.dataloader_num_workers,
+            pin_memory=self.config.pin_memory,
+            persistent_workers=True if self.config.dataloader_num_workers > 0 else False
         )
         val_loader = DataLoader(
-            val_dataset, batch_size=self.config.batch_size, shuffle=False
+            val_dataset, 
+            batch_size=self.config.batch_size, 
+            shuffle=False,
+            num_workers=self.config.dataloader_num_workers,
+            pin_memory=self.config.pin_memory,
+            persistent_workers=True if self.config.dataloader_num_workers > 0 else False
         )
         
         self.logger.info(f"Training samples: {len(train_dataset)}")
@@ -332,42 +457,60 @@ class SoftPromptTrainer:
         )
     
     def train_epoch(self):
-        """Train for one epoch"""
+        """Train for one epoch with gradient accumulation and mixed precision"""
         self.model.train()
         total_loss = 0
         
         progress_bar = tqdm(self.train_loader, desc="Training")
+        accumulation_steps = self.config.gradient_accumulation_steps
         
-        for batch in progress_bar:
-            # Move batch to device
-            batch = {k: v.to(self.device) for k, v in batch.items()}
+        for step, batch in enumerate(progress_bar):
+            # Move batch to device with non_blocking for faster transfer
+            batch = {k: v.to(self.device, non_blocking=True) for k, v in batch.items()}
             
-            # Forward pass
-            outputs = self.model(
-                source_ids=batch['source_ids'],
-                source_mask=batch['source_mask'],
-                target_ids=batch['target_ids'],
-                target_mask=batch['target_mask']
-            )
-            
-            loss = outputs.loss
+            # Forward pass with mixed precision
+            with autocast(enabled=self.scaler is not None):
+                outputs = self.model(
+                    source_ids=batch['source_ids'],
+                    source_mask=batch['source_mask'],
+                    target_ids=batch['target_ids'],
+                    target_mask=batch['target_mask']
+                )
+                
+                loss = outputs.loss / accumulation_steps  # Scale loss for accumulation
             
             # Backward pass
-            self.optimizer.zero_grad()
-            loss.backward()
-            self.optimizer.step()
-            self.scheduler.step()
-            
-            total_loss += loss.item()
-            progress_bar.set_postfix({'loss': f'{loss.item():.4f}'})
-            
-            # Clear cache to prevent memory accumulation
-            if torch.cuda.is_available():
-                torch.cuda.empty_cache()
+            if self.scaler:
+                self.scaler.scale(loss).backward()
             else:
-                # For CPU training, force garbage collection
-                import gc
-                gc.collect()
+                loss.backward()
+            
+            # Gradient accumulation - only step optimizer every N steps
+            if (step + 1) % accumulation_steps == 0:
+                if self.scaler:
+                    self.scaler.step(self.optimizer)
+                    self.scaler.update()
+                else:
+                    self.optimizer.step()
+                
+                self.scheduler.step()
+                self.optimizer.zero_grad()
+            
+            total_loss += loss.item() * accumulation_steps  # Unscale for logging
+            progress_bar.set_postfix({
+                'loss': f'{loss.item() * accumulation_steps:.4f}',
+                'step': f'{step + 1}/{len(self.train_loader)}',
+                'lr': f'{self.scheduler.get_last_lr()[0]:.2e}'
+            })
+        
+        # Handle remaining gradients if batch doesn't divide evenly
+        if len(self.train_loader) % accumulation_steps != 0:
+            if self.scaler:
+                self.scaler.step(self.optimizer)
+                self.scaler.update()
+            else:
+                self.optimizer.step()
+            self.optimizer.zero_grad()
         
         return total_loss / len(self.train_loader)
     
@@ -454,7 +597,26 @@ class SoftPromptTrainer:
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Soft prompt tuning for translation')
+    parser = argparse.ArgumentParser(
+        description='Soft prompt tuning for translation with automatic CPU/GPU optimization',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Auto-detect device (GPU if available, CPU otherwise)
+  python soft_prompt_tuning.py --content-dir content --target-language fr --output-dir models/fr
+
+  # Force GPU training
+  python soft_prompt_tuning.py --device gpu --content-dir content --target-language fr --output-dir models/fr
+
+  # Force CPU training
+  python soft_prompt_tuning.py --device cpu --content-dir content --target-language fr --output-dir models/fr
+  
+  # Or use --force-cpu flag
+  python soft_prompt_tuning.py --force-cpu --content-dir content --target-language fr --output-dir models/fr
+
+Note: Parameters are automatically adjusted based on the selected device for optimal performance.
+        """
+    )
     
     # Model and data
     parser.add_argument('--model-name', default='t5-small',
@@ -475,16 +637,41 @@ def main():
                        help='Learning rate for model (if unfrozen)')
     
     # Training parameters
-    parser.add_argument('--num-epochs', type=int, default=10,
+    parser.add_argument('--num-epochs', type=int, default=15,
                        help='Number of training epochs')
-    parser.add_argument('--batch-size', type=int, default=4,
+    parser.add_argument('--batch-size', type=int, default=16,
                        help='Training batch size')
-    parser.add_argument('--max-examples', type=int, default=1000,
+    parser.add_argument('--max-examples', type=int, default=5000,
                        help='Maximum number of training examples')
+    parser.add_argument('--gradient-accumulation-steps', type=int, default=2,
+                       help='Number of steps for gradient accumulation')
     parser.add_argument('--no-freeze-model', action='store_true',
                        help='Also fine-tune model parameters')
     
+    # Device selection
+    parser.add_argument('--device', choices=['auto', 'gpu', 'cuda', 'cpu'], default='auto',
+                       help='Device to use for training (auto, gpu/cuda, cpu)')
+    parser.add_argument('--force-cpu', action='store_true',
+                       help='Force CPU training even if GPU is available')
+    
+    # GPU optimization parameters
+    parser.add_argument('--no-mixed-precision', action='store_true',
+                       help='Disable mixed precision training')
+    parser.add_argument('--dataloader-workers', type=int, default=None,
+                       help='Number of workers for data loading (auto-detected if not specified)')
+    parser.add_argument('--no-pin-memory', action='store_true',
+                       help='Disable memory pinning for faster GPU transfer')
+    
     args = parser.parse_args()
+    
+    # Auto-determine dataloader workers if not specified
+    dataloader_workers = args.dataloader_workers
+    if dataloader_workers is None:
+        # Auto-select based on device preference
+        if args.force_cpu or args.device == 'cpu':
+            dataloader_workers = 2  # Conservative for CPU
+        else:
+            dataloader_workers = 4  # Standard for GPU
     
     # Create configuration
     config = SoftPromptConfig(
@@ -492,13 +679,19 @@ def main():
         target_language=args.target_language,
         content_dir=args.content_dir,
         output_dir=args.output_dir,
+        device_preference=args.device,
+        force_cpu=args.force_cpu,
         soft_prompt_length=args.soft_prompt_length,
         learning_rate=args.learning_rate,
         model_learning_rate=args.model_learning_rate,
         num_epochs=args.num_epochs,
         batch_size=args.batch_size,
         max_examples=args.max_examples,
-        freeze_model=not args.no_freeze_model
+        gradient_accumulation_steps=args.gradient_accumulation_steps,
+        freeze_model=not args.no_freeze_model,
+        mixed_precision=not args.no_mixed_precision,
+        dataloader_num_workers=dataloader_workers,
+        pin_memory=not args.no_pin_memory
     )
     
     # Initialize trainer and start training
