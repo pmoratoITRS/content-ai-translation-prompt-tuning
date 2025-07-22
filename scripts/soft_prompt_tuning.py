@@ -359,30 +359,86 @@ class SoftPromptTrainer:
         return english_texts, translated_texts
     
     def _load_pairs_from_dir(self, en_dir: Path, target_dir: Path) -> Tuple[List[str], List[str]]:
-        """Load paired files from directories"""
+        """Load paired files from directories with verification"""
         english_texts = []
         translated_texts = []
         
-        for en_file in en_dir.glob("*.en.md"):
-            # Find corresponding translated file
+        # Get all English files and sort for consistent processing
+        en_files = sorted(list(en_dir.glob("*.en.md")))
+        
+        # Track pairing statistics
+        pairs_found = 0
+        pairs_missing = 0
+        pairs_empty = 0
+        pairs_loaded = 0
+        
+        self.logger.info(f"🔍 Verifying file pairs in {en_dir.parent.name}/{en_dir.name} → {target_dir.parent.name}/{target_dir.name}")
+        self.logger.info(f"Found {len(en_files)} English files to process")
+        
+        for en_file in en_files:
+            # Extract base name and construct target file path
             base_name = en_file.name.replace('.en.md', '')
             target_file = target_dir / f"{base_name}.{self.config.target_language}.md"
             
+            self.logger.debug(f"Looking for pair: {en_file.name} → {target_file.name}")
+            
             if target_file.exists():
+                pairs_found += 1
                 try:
+                    # Load both files
                     with open(en_file, 'r', encoding='utf-8') as f:
                         english_content = f.read().strip()
                     
                     with open(target_file, 'r', encoding='utf-8') as f:
                         translated_content = f.read().strip()
                     
-                    # Skip empty files
-                    if english_content and translated_content:
-                        english_texts.append(english_content)
-                        translated_texts.append(translated_content)
+                    # Verify both files have content
+                    if not english_content:
+                        self.logger.warning(f"⚠️  Empty English file: {en_file.name}")
+                        pairs_empty += 1
+                        continue
+                    
+                    if not translated_content:
+                        self.logger.warning(f"⚠️  Empty translated file: {target_file.name}")
+                        pairs_empty += 1
+                        continue
+                    
+                    # Additional content verification
+                    en_word_count = len(english_content.split())
+                    target_word_count = len(translated_content.split())
+                    
+                    # Warn if there's a huge discrepancy (might indicate pairing issues)
+                    if en_word_count > 0 and target_word_count > 0:
+                        ratio = max(en_word_count, target_word_count) / min(en_word_count, target_word_count)
+                        if ratio > 3.0:  # More than 3x difference
+                            self.logger.warning(f"⚠️  Large content size difference in {base_name}: EN={en_word_count} words, {self.config.target_language.upper()}={target_word_count} words")
+                    
+                    # Files look good, add to dataset
+                    english_texts.append(english_content)
+                    translated_texts.append(translated_content)
+                    pairs_loaded += 1
+                    
+                    self.logger.debug(f"✅ Loaded pair: {en_file.name} ↔ {target_file.name} (EN: {en_word_count} words, {self.config.target_language.upper()}: {target_word_count} words)")
                 
                 except Exception as e:
-                    self.logger.warning(f"Error loading {en_file.name}: {e}")
+                    self.logger.error(f"❌ Error loading pair {en_file.name} ↔ {target_file.name}: {e}")
+                    pairs_empty += 1
+            else:
+                pairs_missing += 1
+                self.logger.warning(f"❌ Missing translation: {en_file.name} → {target_file.name} (not found)")
+        
+        # Summary statistics
+        self.logger.info(f"📊 Pairing Summary for {en_dir.parent.name}/{en_dir.name}:")
+        self.logger.info(f"  ✅ Pairs found: {pairs_found}")
+        self.logger.info(f"  ✅ Pairs loaded: {pairs_loaded}")
+        self.logger.info(f"  ❌ Missing translations: {pairs_missing}")
+        self.logger.info(f"  ⚠️  Empty/error files: {pairs_empty}")
+        
+        if pairs_missing > 0:
+            self.logger.warning(f"⚠️  {pairs_missing} English files are missing their {self.config.target_language.upper()} translations")
+        
+        if pairs_loaded == 0:
+            self.logger.error(f"❌ No valid file pairs loaded from {en_dir}")
         
         return english_texts, translated_texts
     
@@ -613,6 +669,12 @@ Examples:
   
   # Quick test with smaller dataset
   python soft_prompt_tuning.py --content-dir content_masked --target-language fr --output-dir models/fr-test --use-masked-data --max-examples 100
+  
+  # Verify file pairs without training
+  python soft_prompt_tuning.py --content-dir content_masked --target-language fr --output-dir models/fr --verify-only --verbose
+  
+  # Training with detailed pair verification
+  python soft_prompt_tuning.py --content-dir content_masked --target-language fr --output-dir models/fr --use-masked-data --verify-pairs --verbose
 
 IMPORTANT: Run preprocess_golden_data.py first to create masked data for optimal training results.
         """
@@ -666,7 +728,19 @@ IMPORTANT: Run preprocess_golden_data.py first to create masked data for optimal
     parser.add_argument('--no-pin-memory', action='store_true',
                        help='Disable memory pinning for faster GPU transfer')
     
+    # Debugging and verification
+    parser.add_argument('--verify-pairs', action='store_true',
+                       help='Enable detailed verification of English-Translation file pairs')
+    parser.add_argument('--verify-only', action='store_true',
+                       help='Only verify file pairs and exit (no training)')
+    parser.add_argument('--verbose', action='store_true',
+                       help='Enable verbose logging including file pair details')
+    
     args = parser.parse_args()
+    
+    # Setup logging level based on verbosity
+    if args.verbose or args.verify_pairs:
+        logging.getLogger().setLevel(logging.DEBUG)
     
     # Auto-determine dataloader workers if not specified
     dataloader_workers = args.dataloader_workers
@@ -698,8 +772,18 @@ IMPORTANT: Run preprocess_golden_data.py first to create masked data for optimal
         pin_memory=not args.no_pin_memory
     )
     
-    # Initialize trainer and start training
+    # Initialize trainer
     trainer = SoftPromptTrainer(config)
+    
+    # If verify-only mode, just check pairs and exit
+    if args.verify_only:
+        print(f"\n✅ File pair verification completed!")
+        print(f"📊 Total examples available: {len(trainer.train_loader.dataset) + len(trainer.val_loader.dataset)}")
+        print(f"📊 Training examples: {len(trainer.train_loader.dataset)}")
+        print(f"📊 Validation examples: {len(trainer.val_loader.dataset)}")
+        return
+    
+    # Start training
     trainer.train()
 
 
