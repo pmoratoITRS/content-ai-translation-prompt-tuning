@@ -231,7 +231,35 @@ class BatchSoftPromptTranslator:
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Soft prompt inference for translation')
+    parser = argparse.ArgumentParser(
+        description='Soft prompt inference for translation with prefix support',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Translate text string
+  python scripts/soft_prompt_inference.py \\
+    --model-path models/soft-prompts-prefix-full/fr/best_soft_prompt_fr \\
+    --text "Hello world"
+  
+  # Translate markdown file (preserves formatting)
+  python scripts/soft_prompt_inference.py \\
+    --model-path models/soft-prompts-prefix-full/fr/best_soft_prompt_fr \\
+    --file content_masked/topics/en/adding-monitors.en.md \\
+    --output-file translated_output.md
+  
+  # Translate file and print to console
+  python scripts/soft_prompt_inference.py \\
+    --model-path models/soft-prompts-prefix-full/fr/best_soft_prompt_fr \\
+    --file content_masked/topics/en/adding-monitors.en.md
+  
+  # Batch translate directory
+  python scripts/soft_prompt_inference.py \\
+    --model-path models/soft-prompts-prefix-full/fr/best_soft_prompt_fr \\
+    --batch \\
+    --content-dir content_masked \\
+    --output-dir translated_content
+        """
+    )
     
     # Required arguments
     parser.add_argument('--model-path', required=True, type=Path,

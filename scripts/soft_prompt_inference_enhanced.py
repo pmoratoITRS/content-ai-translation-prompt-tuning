@@ -167,43 +167,51 @@ def main():
         epilog="""
 Examples:
 
-  # Basic translation
+  # Basic text translation
   python scripts/soft_prompt_inference_enhanced.py \\
-    --model-path models/soft-prompts/fr \\
+    --model-path models/soft-prompts-prefix-full/fr/best_soft_prompt_fr \\
     --text "Hello world"
 
-  # With style instruction
+  # Translate markdown file with style
   python scripts/soft_prompt_inference_enhanced.py \\
-    --model-path models/soft-prompts/fr \\
-    --text "Configure the database settings" \\
-    --style technical
-
-  # With custom instruction
-  python scripts/soft_prompt_inference_enhanced.py \\
-    --model-path models/soft-prompts/fr \\
-    --text "Click the submit button" \\
-    --instruction "use imperative form for UI actions"
-
-  # With formatting preservation
-  python scripts/soft_prompt_inference_enhanced.py \\
-    --model-path models/soft-prompts/fr \\
-    --text "**Bold** and `code` text" \\
-    --preserve-formatting
-
-  # Multiple instructions
-  python scripts/soft_prompt_inference_enhanced.py \\
-    --model-path models/soft-prompts/fr \\
-    --text "API endpoint configuration" \\
+    --model-path models/soft-prompts-prefix-full/fr/best_soft_prompt_fr \\
+    --file content_masked/topics/en/adding-monitors.en.md \\
     --style technical \\
-    --instruction "keep acronyms in English" \\
+    --output translated_output.md
+
+  # Translate file to console with custom instructions
+  python scripts/soft_prompt_inference_enhanced.py \\
+    --model-path models/soft-prompts-prefix-full/fr/best_soft_prompt_fr \\
+    --file content_masked/topics/en/adding-monitors.en.md \\
+    --instruction "use formal tone, keep technical terms in English" \\
     --preserve-formatting
+
+  # Documentation style with multiple instructions
+  python scripts/soft_prompt_inference_enhanced.py \\
+    --model-path models/soft-prompts-prefix-full/fr/best_soft_prompt_fr \\
+    --file content_masked/topics/en/api-overview.en.md \\
+    --style documentation \\
+    --instruction "preserve API endpoints and code examples" \\
+    --preserve-formatting \\
+    --output docs/fr/api-overview.fr.md
+
+  # UI translation with specific rules
+  python scripts/soft_prompt_inference_enhanced.py \\
+    --model-path models/soft-prompts-prefix-full/fr/best_soft_prompt_fr \\
+    --text "Click the submit button to save changes" \\
+    --style ui \\
+    --instruction "use imperative form, keep button names as-is"
         """
     )
     
     parser.add_argument('--model-path', type=str, required=True,
                        help='Path to the trained soft prompt model')
-    parser.add_argument('--text', type=str, required=True,
+    # Input options (mutually exclusive)
+    input_group = parser.add_mutually_exclusive_group(required=True)
+    input_group.add_argument('--text', type=str,
                        help='Text to translate')
+    input_group.add_argument('--file', type=str,
+                       help='Markdown file to translate')
     
     # Instruction options
     parser.add_argument('--instruction', type=str,
@@ -214,6 +222,10 @@ Examples:
     parser.add_argument('--preserve-formatting', action='store_true',
                        help='Preserve markdown/HTML formatting')
     
+    # Output options
+    parser.add_argument('--output', type=str,
+                       help='Output file for translation (when using --file)')
+    
     # Generation options
     parser.add_argument('--max-length', type=int, default=1024,
                        help='Maximum input length')
@@ -223,26 +235,82 @@ Examples:
     # Create translator
     translator = EnhancedSoftPromptTranslator(args.model_path)
     
-    # Translate with instructions
-    translation = translator.translate(
-        text=args.text,
-        instruction=args.instruction,
-        style=args.style,
-        preserve_formatting=args.preserve_formatting,
-        max_length=args.max_length
-    )
-    
-    # Output results
-    print("Translation:")
-    print(translation)
-    
-    # Show the constructed instruction for debugging
-    if args.instruction or args.style or args.preserve_formatting:
-        input_text = translator._build_input_with_instructions(
-            args.text, args.instruction, args.style, args.preserve_formatting
+    # Handle different input types
+    if args.text:
+        # Translate text string
+        input_text = args.text
+        
+        # Translate with instructions
+        translation = translator.translate(
+            text=input_text,
+            instruction=args.instruction,
+            style=args.style,
+            preserve_formatting=args.preserve_formatting,
+            max_length=args.max_length
         )
-        print(f"\nFull instruction used:")
-        print(f"'{input_text}'")
+        
+        # Output to console
+        print("Translation:")
+        print(translation)
+        
+        # Show the constructed instruction for debugging
+        if args.instruction or args.style or args.preserve_formatting:
+            full_instruction = translator._build_input_with_instructions(
+                input_text, args.instruction, args.style, args.preserve_formatting
+            )
+            print(f"\nFull instruction used:")
+            print(f"'{full_instruction}'")
+    
+    elif args.file:
+        # Translate markdown file
+        from pathlib import Path
+        
+        # Read input file
+        input_file = Path(args.file)
+        if not input_file.exists():
+            print(f"Error: Input file '{args.file}' not found")
+            return
+        
+        with open(input_file, 'r', encoding='utf-8') as f:
+            file_content = f.read()
+        
+        print(f"📂 Translating file: {args.file}")
+        print(f"📄 Content length: {len(file_content)} characters")
+        
+        # Translate with instructions
+        translation = translator.translate(
+            text=file_content,
+            instruction=args.instruction,
+            style=args.style,
+            preserve_formatting=args.preserve_formatting,
+            max_length=args.max_length
+        )
+        
+        # Handle output
+        if args.output:
+            # Save to file
+            output_file = Path(args.output)
+            output_file.parent.mkdir(parents=True, exist_ok=True)
+            
+            with open(output_file, 'w', encoding='utf-8') as f:
+                f.write(translation)
+            
+            print(f"✅ Translation saved to: {args.output}")
+        else:
+            # Print to console
+            print("\n" + "="*50)
+            print("TRANSLATION:")
+            print("="*50)
+            print(translation)
+        
+        # Show the constructed instruction for debugging
+        if args.instruction or args.style or args.preserve_formatting:
+            full_instruction = translator._build_input_with_instructions(
+                file_content[:100] + "..." if len(file_content) > 100 else file_content,
+                args.instruction, args.style, args.preserve_formatting
+            )
+            print(f"\nFull instruction used (first 100 chars):")
+            print(f"'{full_instruction}'")
 
 
 if __name__ == "__main__":
