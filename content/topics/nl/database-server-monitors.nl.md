@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "title": "Databasecontroleregels"
+  },
+  "title": "Databasecontroleregels",
+  "summary": "Bewaak uw MySQL en SQL Server-database-servers.",
+  "url": "/support/kb/synthetic-monitoring/uptime-monitoring/databasecontroleregels",
+  "translationKey": "https://www.uptrends.com/support/kb/database-server-monitors"
+}
+
+Tenzij u een statische brochurewebsite hebt, is uw website of webservice afhankelijk van een database om content op te halen, gebruikers te beheren of orders te verwerken. Weten wat de responstijden van uw database zijn kan een catastrofe helpen voorkomen. Met Uptrends' controleregels voor database servers kunt u altijd op de hoogte zijn van problemen met uw database.
+
+Uptrends gebruikt zijn {{% Features/Variable variable="CheckpointCount" %}} controlestations om uw database server extern te monitoren.
+
+{{< callout >}}
+**Opmerking:** Indien uw database niet toegankelijk is via internet kunt u dit type controleregel niet gebruiken. Echter, u kunt servers achter uw firewall monitoren met [Uptrends Infra](/producten/infra).
+{{< /callout >}}
+
+## Hoe werkt het?
+
+Met Uptrends' database monitoring kunt u Microsoft SQL Server of MySQL monitoren. De controlestations van Uptrends zullena proberen een verbinding te maken met het IP-adres en de database die u specificeert op het tabblad {{< AppElement type="tab" >}}Extra{{< /AppElement >}} , en als u inloggegevens invult zal het controlestation proberen in te loggen. Behalve bij het overschrijden van de responstijden die u specificeert in het tabblad {{< AppElement type="tab" >}}Foutcondities{{< /AppElement >}} , zal Uptrends een alert triggeren bij mislukte of verbroken verbindingen.
+
+{{< callout >}}
+**Opmerking**: Wilt u meer weten over beveiliging en het delen van uw inloggegevens voor uw database? Lees dan meer over hoe Uptrends uw inloggegevens beveiligt: [Encryptie en de beveiliging van uw website](/support/kb/synthetic-monitoring/controleregel-instellingen/encryptie-en-de-beveiliging-van-uw-website).
+{{< /callout >}}
+
+Een database-controleregeltype stuurt u alerts op basis van responstijd en verbindingsproblemen. U zult zien dat het instellen van een databaseservercontroleregel lijkt op het instellen van een controleregeltype HTTPS met slechts enkele speciale velden. Meer informatie over het instellen van controleregels en foutcondities vindt u in de [knowledge base](/support/kb). Voor een databasecontroleregel moet u het volgende weten:
+
+-   Naam van de database,
+-   URL of IP van de database, en optioneel
+-   Inloggegevens van de database.
+
+## De controleregel instellen
+
+Een databasecontroleregel instellen:
+
+1.  Klik op {{< AppElement type="button" >}}\+ Controleregel toevoegen{{< /AppElement >}} bij de **Monitoring**-opties op het {{< AppElement type="menuitem" >}}Hoofd{{< /AppElement >}}-menu.
+2.  Selecteer **Microsoft SQL Server** of **MySQL** onder **Database Servers** in het vak **Type**.
+3.  Typ de domeinnaam of het IP-adres van de database server in het vak **Netwerkadres**.
+4.  Vul de andere velden in op het tabblad {{< AppElement type="tab" >}}Algemeen{{< /AppElement >}}.
+5.  Stel uw verwachte responstijden in op het tabblad {{< AppElement type="tab" >}}Foutcondities{{< /AppElement >}}.
+6.  Klik op het tabblad {{< AppElement type="tab" >}}Extra{{< /AppElement >}}.
+7.  Vul indien nodig een **Gebruikersnaam** en **Wachtwoord** in.
+8.  Vul de **Databasenaam** in.
+9.  Kies uw controlestations op het tabblad {{< AppElement type="tab" >}}Controlestations{{< /AppElement >}}.
+10.  Klik op {{< AppElement type="savebutton" >}}Opslaan{{< /AppElement >}}.
