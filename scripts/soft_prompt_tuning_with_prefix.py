@@ -48,7 +48,7 @@ class TranslationDatasetWithPrefix(Dataset):
         target = self.target_texts[idx]
         
         # Add T5 instruction prefix to source
-        prefixed_source = f"translate English to {self.target_lang_name}: {source}"
+        prefixed_source = f"Translate English to {self.target_lang_name}: {source}"
         
         # Tokenize source with prefix
         source_encoding = self.tokenizer(
