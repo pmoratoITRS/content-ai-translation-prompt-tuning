@@ -1,19 +1,90 @@
-# Core dependencies for soft prompt tuning
-torch>=2.0.0
-transformers>=4.21.0
-datasets>=2.10.0
-accelerate>=0.20.0
-tqdm>=4.65.0
+# ============================================================================
+# Soft Prompt Tuning for Documentation Translation - Requirements
+# ============================================================================
 
-# Optional: for specific PyTorch versions with CUDA support
+# Core Machine Learning Dependencies
+# ----------------------------------
+torch>=2.0.0                    # PyTorch for neural networks and GPU support
+transformers>=4.30.0            # Hugging Face transformers for T5 and other models
+tokenizers>=0.13.0              # Fast tokenizers (included with transformers)
+accelerate>=0.20.0              # Hugging Face accelerate for distributed training
+datasets>=2.10.0                # Hugging Face datasets (optional, for future use)
+
+# Training and Optimization
+# -------------------------
+tqdm>=4.65.0                    # Progress bars for training loops
+numpy>=1.21.0                   # Numerical operations
+scipy>=1.9.0                    # Scientific computing utilities
+
+# Text Processing and Utilities
+# -----------------------------
+regex>=2022.7.0                 # Advanced regex for text preprocessing
+pathlib2>=2.3.7; python_version < "3.4"  # Backport for older Python (conditional)
+
+# Data Handling and Serialization
+# -------------------------------
+json5>=0.9.0                    # Enhanced JSON parsing (optional)
+pyyaml>=6.0                     # YAML parsing for configuration files
+
+# Evaluation Metrics (Optional)
+# -----------------------------
+sacrebleu>=2.3.0                # BLEU score evaluation
+rouge-score>=0.1.2              # ROUGE score evaluation  
+editdistance>=0.6.2             # Edit distance metrics
+
+# Development and Debugging
+# -------------------------
+logging>=0.4.9.6                # Enhanced logging (usually built-in)
+argparse>=1.4.0                 # Command line parsing (usually built-in)
+
+# Optional: GPU-Specific PyTorch Installation
+# ===========================================
+# Uncomment ONE of the following blocks based on your CUDA version:
+
+# For CUDA 11.8 (most common):
 # torch>=2.0.0+cu118 --index-url https://download.pytorch.org/whl/cu118
 # torchvision>=0.15.0+cu118 --index-url https://download.pytorch.org/whl/cu118
 # torchaudio>=2.0.0+cu118 --index-url https://download.pytorch.org/whl/cu118
 
-# Evaluation dependencies (optional - if you want to use built-in evaluation)
-sacrebleu>=2.3.0
-rouge-score>=0.1.2
-editdistance>=0.6.2
+# For CUDA 12.1:
+# torch>=2.0.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+# torchvision>=0.15.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+# torchaudio>=2.0.0+cu121 --index-url https://download.pytorch.org/whl/cu121
 
-# Additional utilities
-requests>=2.28.0 
+# For CPU-only (no GPU):
+# torch>=2.0.0+cpu --index-url https://download.pytorch.org/whl/cpu
+# torchvision>=0.15.0+cpu --index-url https://download.pytorch.org/whl/cpu
+# torchaudio>=2.0.0+cpu --index-url https://download.pytorch.org/whl/cpu
+
+# ============================================================================
+# Installation Instructions
+# ============================================================================
+#
+# 1. Basic installation (CPU):
+#    pip install -r requirements.txt
+#
+# 2. GPU installation (recommended):
+#    a) First install PyTorch with CUDA support (uncomment appropriate lines above)
+#    b) Then install remaining requirements:
+#       pip install -r requirements.txt
+#
+# 3. Quick GPU setup for CUDA 11.8:
+#    pip install torch>=2.0.0+cu118 torchvision>=0.15.0+cu118 torchaudio>=2.0.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+#    pip install -r requirements.txt
+#
+# 4. Verify GPU installation:
+#    python scripts/check_gpu_setup.py
+#
+# ============================================================================
+# Project Scripts Dependencies
+# ============================================================================
+# 
+# scripts/preprocess_golden_data.py    → re, json, pathlib, logging, argparse
+# scripts/soft_prompt_tuning.py        → torch, transformers, tqdm, logging, argparse  
+# scripts/soft_prompt_inference.py     → torch, transformers, json, pathlib, argparse
+# scripts/check_gpu_setup.py           → torch, sys
+#
+# All standard library dependencies (re, json, pathlib, logging, argparse, sys) 
+# are included with Python and don't need to be installed separately.
+#
+# ============================================================================ 
