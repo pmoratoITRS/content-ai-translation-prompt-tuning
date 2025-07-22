@@ -193,11 +193,14 @@ class SoftPromptModel(nn.Module):
             outputs = self.base_model.generate(
                 inputs_embeds=combined_embeds,
                 attention_mask=combined_mask,
-                max_length=1024,
-                num_beams=4,
+                max_new_tokens=100,  # Generate up to 100 new tokens
+                num_beams=2,  # Reduce beam size for speed
                 early_stopping=True,
-                do_sample=True,
-                temperature=0.1
+                do_sample=False,  # Use greedy decoding for consistency
+                pad_token_id=self.tokenizer.pad_token_id,
+                eos_token_id=self.tokenizer.eos_token_id,
+                decoder_start_token_id=self.tokenizer.pad_token_id,  # T5 specific
+                repetition_penalty=1.1  # Prevent repetition
             )
             return outputs
 

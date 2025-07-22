@@ -77,11 +77,14 @@ class SoftPromptTranslator:
     
     def translate(self, text: str, max_length: int = 1024) -> str:
         """Translate a single text using soft prompts"""
-        # Tokenize input
+        # Use raw text input (matching training format)
+        # The soft prompts provide the translation context
+        
+        # Tokenize input directly (no instruction prefix needed)
         inputs = self.tokenizer(
             text,
             max_length=max_length,
-            padding="max_length",
+            padding="max_length", 
             truncation=True,
             return_tensors="pt"
         ).to(self.device)
