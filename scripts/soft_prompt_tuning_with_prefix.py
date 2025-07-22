@@ -177,7 +177,10 @@ Examples:
     
     # Create configuration
     config = SoftPromptConfig(
-        target_language=args.target_language,
+        model_name='t5-small',  # Required parameter
+        target_language=args.target_language,  # Required parameter
+        content_dir=Path(args.content_dir),  # Required parameter  
+        output_dir=Path(args.output_dir),  # Required parameter
         batch_size=args.batch_size,
         num_epochs=args.num_epochs,
         learning_rate=args.learning_rate,
@@ -188,7 +191,7 @@ Examples:
     )
     
     # Create trainer with prefix support
-    trainer = SoftPromptTrainerWithPrefix(config, args.content_dir, args.output_dir)
+    trainer = SoftPromptTrainerWithPrefix(config)
     trainer.use_masked_data = args.use_masked_data
     trainer.verify_pairs = args.verify_pairs
     
