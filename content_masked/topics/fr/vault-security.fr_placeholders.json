@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/account/vault-security",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/account/vault\" lang=\"fr\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/api/vault-api\" lang=\"fr\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"/support/kb/account/vault#credential-set\" lang=\"fr\" >}}",
-  "[LINK_URL_4]": "{{< ref path=\"/support/kb/account/vault#vault-permissions\" lang=\"fr\" >}}",
-  "[INLINE_CODE_1]": "`*****`"
-}

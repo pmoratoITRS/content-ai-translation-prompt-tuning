@@ -1,7 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/june-2024-new-cwv-inp",
-  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/browser-monitoring\" lang=\"nl\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/transactions\" lang=\"nl\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitoring-results/core-web-vitals\" lang=\"nl\" >}}"
-}

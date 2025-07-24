@@ -1,8 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/checkpoints/private-checkpoints-requirements",
-  "[LINK_URL_1]": "{{< ref path=\"contact\" lang=\"nl\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"#hardware-requirements\" lang=\"nl\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"/support/kb/alerting/errors/unconfirmed-and-confirmed-errors\" lang=\"nl\" >}}",
-  "[ANCHOR_1]": "{id=\"hardware-requirements\"}"
-}

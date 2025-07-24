@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/january-2025-custom-metrics-minimum-maximum-metric-values",
-  "[IMAGE_URL_1]": "/img/content/scr-custom-metric-min-max-values.min.png",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/api-monitoring/custom-api-metrics-setup\" lang=\"de\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/api-monitoring/api-monitoring-overview\" lang=\"de\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"/support/kb/dashboards-and-reporting/dashboards/custom-report-tiles\" lang=\"de\" >}}",
-  "[LINK_URL_4]": "[IMAGE_URL_1]"
-}

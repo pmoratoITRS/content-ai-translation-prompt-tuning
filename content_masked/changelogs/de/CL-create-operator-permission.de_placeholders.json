@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/june-2024-operator-permissions",
-  "[IMAGE_URL_1]": "/img/content/scr-new-operator-permissions.min.png",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/account/users/operators/permissions\" lang=\"de\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/account/users/operators/giving-an-operator-administrator-rights\" lang=\"de\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"/support/kb/account/users/operators/add-or-delete-operator\" lang=\"de\" >}}",
-  "[LINK_URL_4]": "[IMAGE_URL_1]"
-}

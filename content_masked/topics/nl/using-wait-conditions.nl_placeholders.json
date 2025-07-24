@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/transactions/using-wait-conditions",
-  "[IMAGE_URL_1]": "/img/content/37df779f-b4a7-4e0e-bf9f-8bc1ca996396.png",
-  "[LINK_URL_1]": "[IMAGE_URL_1]",
-  "[LINK_URL_2]": "{{< ref path=\"contact\" lang=\"nl\" >}}",
-  "[SHORTCODE_1]": "{{< callout >}}",
-  "[SHORTCODE_2]": "{{< /callout >}}"
-}

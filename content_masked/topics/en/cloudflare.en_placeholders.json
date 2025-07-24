@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/checkpoints/cloudflare",
-  "[LINK_URL_1]": "https://radar.cloudflare.com/traffic/verified-bots",
-  "[LINK_URL_2]": "https://www.cloudflare.com/learning/bots/how-to-manage-good-bots/",
-  "[LINK_URL_3]": "{{< ref path=\"contact\" lang=\"en\" >}}",
-  "[LINK_URL_4]": "https://dash.cloudflare.com/support",
-  "[LINK_URL_5]": "https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/"
-}

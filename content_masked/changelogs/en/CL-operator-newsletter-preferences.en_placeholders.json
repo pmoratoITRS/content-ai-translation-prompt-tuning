@@ -1,6 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/january-2024-operator-newsletter-preferences",
-  "[SHORTCODE_1]": "{{< AppElement type=\"tab\" >}}",
-  "[SHORTCODE_2]": "{{< /AppElement >}}"
-}

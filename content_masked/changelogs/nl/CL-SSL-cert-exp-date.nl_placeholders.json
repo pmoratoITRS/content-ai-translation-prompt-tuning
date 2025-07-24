@@ -1,7 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/february-2024-ssl-cert-monitor-expiration-date",
-  "[IMAGE_URL_1]": "/img/content/scr-ssl-expiration-date_26022024.min.png",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/uptime-monitoring/ssl-monitors\" lang=\"nl\" >}}",
-  "[LINK_URL_2]": "[IMAGE_URL_1]"
-}

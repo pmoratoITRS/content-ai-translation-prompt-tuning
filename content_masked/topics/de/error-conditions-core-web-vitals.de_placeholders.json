@@ -1,8 +1,0 @@
-{
-  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/extra-metrics-and-features\" lang=\"de\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/core-web-vitals\" lang=\"de\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/error-conditions\" lang=\"de\" >}}",
-  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/error-conditions#error-conditions-by-category\" lang=\"en\" >}}",
-  "[ANCHOR_1]": "{id=\"use-current-recommended-core-web-vitals\"}",
-  "[URL_1]": "https://www.uptrends.com/support/kb/monitor-settings/error-conditions-core-web-vitals\""
-}

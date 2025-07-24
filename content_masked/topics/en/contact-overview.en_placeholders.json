@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/contact/contact-overview",
-  "[LINK_URL_1]": "{{< ref path=\"pricing\" lang=\"en\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"contact\" lang=\"en\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"support/kb/contact/feature-requests\" lang=\"en\" >}}",
-  "[LINK_URL_4]": "{{< ref path=\"contact\" lang=\"en\" >}}",
-  "[LINK_URL_5]": "{{< ref path=\"/support/kb/contact/beta-programs\" lang=\"en\" >}}"
-}

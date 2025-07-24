@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/api/accessing-the-uptrends-api-using-curl",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/api/authentication-v4\" lang=\"fr\" >}}",
-  "[SHORTCODE_1]": "{{< callout >}}",
-  "[SHORTCODE_2]": "{{< /callout >}}",
-  "[INLINE_CODE_1]": "`curl https://api.uptrends.com/v4/Monitor -k --user 9d9f60d1a54ceb34afaf47b3abebde47:1234xxx --header \"Accept: application/json\"`",
-  "[HTML_TAG_1]": "<https://curl.haxx.se/download.html>"
-}

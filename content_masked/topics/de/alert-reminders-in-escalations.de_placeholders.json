@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/alerting/alert-reminders-in-escalations",
-  "[IMAGE_URL_1]": "/img/content/c8407764-8f48-49fa-8608-79e3ee2b1c4f.png",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/alerting/alert-escalation-levels\" lang=\"de\" >}}",
-  "[LINK_URL_2]": "[IMAGE_URL_1]",
-  "[SHORTCODE_1]": "{{< callout >}}",
-  "[SHORTCODE_2]": "{{< /callout >}}"
-}

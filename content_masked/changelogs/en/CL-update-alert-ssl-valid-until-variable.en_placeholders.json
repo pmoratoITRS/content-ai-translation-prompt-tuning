@@ -1,6 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/october-2024-updates-to-alert-ssl-valid-until-variable",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/alerting/integrations/custom-integrations/alerting-system-variables\" lang=\"en\" >}}",
-  "[INLINE_CODE_1]": "`@‌alert.sslValidUntil`"
-}

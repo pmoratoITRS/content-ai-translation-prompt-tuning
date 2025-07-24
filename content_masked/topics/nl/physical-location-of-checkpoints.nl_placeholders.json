@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/checkpoints/physical-location-of-checkpoints",
-  "[LINK_URL_1]": "/controlestations",
-  "[LINK_URL_2]": "https://www.maxmind.com/en/geoip2-city-database-accuracy",
-  "[LINK_URL_3]": "https://www.uptrends.com/contact",
-  "[SHORTCODE_1]": "{{< callout >}}",
-  "[SHORTCODE_2]": "{{< /callout >}}"
-}

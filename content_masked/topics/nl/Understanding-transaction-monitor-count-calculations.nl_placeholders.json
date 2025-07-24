@@ -1,6 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/transactions/Understanding-transaction-monitor-count-calculations",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitor-settings/monitor-mode\" lang=\"nl\" >}}",
-  "[LINK_URL_2]": "/contact"
-}

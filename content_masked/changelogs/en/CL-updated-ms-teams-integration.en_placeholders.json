@@ -1,6 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/august-2024-updated-ms-teams-integration",
-  "[LINK_URL_1]": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/alerting/integrations/microsoft-teams\" lang=\"en\" >}}"
-}
