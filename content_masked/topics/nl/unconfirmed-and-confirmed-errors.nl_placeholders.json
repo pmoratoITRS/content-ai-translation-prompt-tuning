@@ -1,7 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/error-analysis/unconfirmed-and-confirmed-errors",
-  "[LINK_URL_1]": "{{< ref path=\"support/kb/alerting/create-alert-definitions\" lang=\"nl\" >}}",
-  "[SHORTCODE_1]": "{{< callout >}}",
-  "[SHORTCODE_2]": "{{< /callout >}}"
-}

@@ -1,7 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/april-2024-api-audit-logging",
-  "[IMAGE_URL_1]": "/img/content/scr-auditlog-api-source.min.png",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/api/authentication-v4\" lang=\"de\" >}}",
-  "[LINK_URL_2]": "[IMAGE_URL_1]"
-}

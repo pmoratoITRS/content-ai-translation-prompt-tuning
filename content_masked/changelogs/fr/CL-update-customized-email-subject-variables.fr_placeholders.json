@@ -1,9 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/november-2024-email-subject-variables",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/transactions/automatic-variables\" lang=\"fr\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/alerting/integrations/custom-integrations/alerting-system-variables\" lang=\"fr\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"/support/kb/alerting/customize-alert-email-subject\" lang=\"fr\" >}}",
-  "[SYSTEM_VAR_1]": "{{@monitor.name}}",
-  "[INLINE_CODE_1]": "`[SYSTEM_VAR_1]`"
-}

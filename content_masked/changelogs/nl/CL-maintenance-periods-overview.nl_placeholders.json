@@ -1,6 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/february-2025-maintenance-periods-overview-updates",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitor-settings/monitor-permissions#permission-types\" lang=\"nl\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitor-management/maintenance-periods\" lang=\"nl\" >}}"
-}

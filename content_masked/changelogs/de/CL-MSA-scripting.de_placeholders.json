@@ -1,8 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/july-2024-msa-scripting",
-  "[IMAGE_URL_1]": "/img/content/scr-msa-prerequest-script.min.png",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/api-monitoring/multi-step-custom-scripting\" lang=\"en\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/api-monitoring/multi-step\" lang=\"de\" >}}",
-  "[LINK_URL_3]": "[IMAGE_URL_1]"
-}

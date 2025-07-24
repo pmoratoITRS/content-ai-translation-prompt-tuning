@@ -1,6 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/transactions/choosing-which-transactions-you-can-or-should-test",
-  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/understanding-your-transactions\" lang=\"en\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/transaction-monitoring-caveats-tips-and-tricks\" lang=\"fr\" >}}"
-}

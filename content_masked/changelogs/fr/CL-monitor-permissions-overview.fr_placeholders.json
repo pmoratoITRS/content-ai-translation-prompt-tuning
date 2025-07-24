@@ -1,8 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/february-2025-monitor-permissions-overview",
-  "[IMAGE_URL_1]": "/img/content/gif-monitor-permissions-overview.gif",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/account/users/operators/user-management-hub\" lang=\"fr\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/account/users/operators/operator-permissions\" lang=\"fr\" >}}",
-  "[LINK_URL_3]": "[IMAGE_URL_1]"
-}

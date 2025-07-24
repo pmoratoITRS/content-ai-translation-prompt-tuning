@@ -1,8 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitoring-results/timeline-screenshots",
-  "[IMAGE_URL_1]": "/img/content/scr-timeline-screenshots.min.png",
-  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/waterfall-chart\" lang=\"en\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/basics/monitor-types\" lang=\"en\" >}}",
-  "[LINK_URL_3]": "[IMAGE_URL_1]"
-}

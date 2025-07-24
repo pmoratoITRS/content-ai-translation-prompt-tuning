@@ -1,7 +1,0 @@
-{
-  "[LINK_URL_1]": "{{< ref path=\"contact\" lang=\"de\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"#hardware-requirements\" lang=\"de\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"/support/kb/alerting/errors/unconfirmed-and-confirmed-errors\" lang=\"de\" >}}",
-  "[ANCHOR_1]": "{id=\"hardware-requirements\"}",
-  "[URL_1]": "https://www.uptrends.com/support/kb/checkpoints/private-checkpoints-requirements\""
-}

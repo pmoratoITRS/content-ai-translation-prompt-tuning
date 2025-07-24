@@ -1,8 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/april-2024-filmstrips-transactions",
-  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/timeline-screenshots\" lang=\"en\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/extra-metrics-and-features\" lang=\"en\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/understanding-the-step-editor\" lang=\"en\" >}}",
-  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/Understanding-transaction-monitor-count-calculations\" lang=\"en\" >}}"
-}

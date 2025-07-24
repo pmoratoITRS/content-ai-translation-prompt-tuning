@@ -1,6 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/may-2025-new-whitelisted-ip-address-for-general-and-alerting-emails",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/account/ip-addresses-for-whitelisting\" lang=\"nl\" >}}",
-  "[INLINE_CODE_1]": "`168.245.61.22`"
-}

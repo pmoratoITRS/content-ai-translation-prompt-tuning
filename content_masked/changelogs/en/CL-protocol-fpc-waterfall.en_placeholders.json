@@ -1,6 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/may-2024-fpc-waterfall-protocol",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitoring-results/waterfall-chart\" lang=\"en\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/browser-monitoring\" lang=\"en\" >}}"
-}

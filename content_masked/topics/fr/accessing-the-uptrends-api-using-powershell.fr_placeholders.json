@@ -1,8 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/api/accessing-the-uptrends-api-using-powershell",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/api/authentication-v4\" lang=\"fr\" >}}",
-  "[CODE_BLOCK_1]": "```powershell\n# Indiquez vos identifiants de connexion Uptrends\n$user = \"9d9f60d1a54ceb34afaf47b3abebde47\" $pass= \"1234xxx\" \n# Indiquez l'URI de la méthode de la commande d'API à exécuter\n$uri = \"https://api.uptrends.com/v4/Monitor\"\n# Compilez ces informations de connexion dans une référence d'identification contenant l'authentification de base \n$passwordValue = ConvertTo-SecureString $pass -AsPlainText -Force  $cred = New-Object System.Management.Automation.PSCredential ($user, $passwordValue)  \n# Exécutez la demande\n$result = Invoke-RestMethod -Uri $uri -Method Get -Credential $cred -Headers @{ Accept = \"application/json\" }\n```",
-  "[INLINE_CODE_1]": "`$ result\\`",
-  "[INLINE_CODE_2]": "`$result | Where-Object { $_.Name -eq 'Uptime galacticresorts.com' } | Select Url`"
-}

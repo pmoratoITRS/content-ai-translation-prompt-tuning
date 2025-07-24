@@ -1,5 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/concurrent-monitoring/how-does-concurrent-monitoring-work",
-  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/concurrent-monitoring/pricing-calculation-examples\" lang=\"nl\" >}}"
-}

@@ -1,6 +1,0 @@
-{
-  "[URL_BASE_TOPICS]": "/support/kb/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/synthetic-monitoring/synthetic-monitoring-overview",
-  "[LINK_URL_1]": "{{< ref path=\"support/kb/basics/monitor-types\" lang=\"nl\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/account/payments-and-subscriptions/adding-extra-monitors-and-sms\" lang=\"nl\" >}}"
-}

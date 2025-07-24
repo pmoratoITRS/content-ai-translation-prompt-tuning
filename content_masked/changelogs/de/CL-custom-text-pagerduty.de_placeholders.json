@@ -1,7 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/may-2024-pagerduty-custom-text",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/alerting/integrations/pagerduty\" lang=\"de\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/alerting\" lang=\"de\" >}}",
-  "[LINK_URL_3]": "{{< ref path=\"/support/kb/alerting/alert-escalation-levels#what-are-escalation-levels\" lang=\"de\" >}}"
-}

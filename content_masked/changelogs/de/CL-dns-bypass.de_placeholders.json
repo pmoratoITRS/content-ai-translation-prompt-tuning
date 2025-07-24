@@ -1,8 +1,0 @@
-{
-  "[URL_BASE_CHANGELOG]": "/changelog/",
-  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/march-2024-dns-bypass",
-  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitoring-results/check-details\" lang=\"de\" >}}",
-  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitor-settings/dns-bypass\" lang=\"de\" >}}",
-  "[SHORTCODE_1]": "{{< AppElement type=\"tab\" >}}",
-  "[SHORTCODE_2]": "{{< /AppElement >}}"
-}
