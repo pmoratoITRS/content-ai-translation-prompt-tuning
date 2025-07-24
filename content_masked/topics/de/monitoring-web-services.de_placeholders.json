@@ -1,0 +1,10 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/api-monitoring/monitoring-web-services",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/api-monitoring\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/basics/monitor-types\" lang=\"de\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[INLINE_CODE_1]": "`Content-Type: application/json\\`",
+  "[INLINE_CODE_2]": "`Content-Type: text/xml\\`"
+}

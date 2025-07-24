@@ -1,0 +1,19 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitoring-results/page-source-and-console-log",
+  "[IMAGE_URL_1]": "/img/content/scr-pagesource-consolelog.min.png",
+  "[IMAGE_URL_2]": "/img/content/scr-pagesource-in-transactions.min.png",
+  "[IMAGE_URL_3]": "/img/content/scr-pagesource-icons-transaction.min.png",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions\" lang=\"nl\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/browser-monitoring\" lang=\"nl\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/waterfall-chart\" lang=\"nl\" >}}",
+  "[LINK_URL_4]": "[IMAGE_URL_1]",
+  "[LINK_URL_5]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/using-transaction-screenshots-waterfalls\" lang=\"nl\" >}}",
+  "[LINK_URL_6]": "[IMAGE_URL_2]",
+  "[LINK_URL_7]": "{{< AppUrl >}}//Report/ProbeLog",
+  "[LINK_URL_8]": "[IMAGE_URL_3]",
+  "[SHORTCODE_1]": "{{< AppElement type=\"iconSourceCode\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"iconConsoleLog\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}"
+}

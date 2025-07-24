@@ -1,0 +1,7 @@
+{
+  "base_model_name": "t5-small",
+  "target_language": "fr",
+  "soft_prompt_length": 20,
+  "embed_dim": 512,
+  "model_frozen": true
+}

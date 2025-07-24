@@ -1,0 +1,23 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/checkpoints/checkpoint-information",
+  "[LINK_URL_1]": "/checkpoints",
+  "[LINK_URL_2]": "{{< AppUrl >}}/Download/DownloadCheckpointServerIpv4",
+  "[LINK_URL_3]": "{{< AppUrl >}}/Download/DownloadCheckpointServerIpv6",
+  "[LINK_URL_4]": "{{< ref path=\"/support/kb/synthetic-monitoring/checkpoints/get-checkpoint-data-in-json-and-xml-format\" lang=\"fr\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"/support/kb/synthetic-monitoring/checkpoints/checkpoint-exclusions\" lang=\"fr\" >}}",
+  "[LINK_URL_6]": "/checkpoints",
+  "[LINK_URL_7]": "{{< ref path=\"/support/kb/synthetic-monitoring/monitor-settings/check-interval-explained\" lang=\"fr\" >}}",
+  "[LINK_URL_8]": "{{< ref path=\"contact\" lang=\"fr\" >}}",
+  "[LINK_URL_9]": "{{< ref path=\"/support/kb/synthetic-monitoring/checkpoints/physical-location-of-checkpoints\" lang=\"fr\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< callout >}}",
+  "[SHORTCODE_4]": "{{< /callout >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[SHORTCODE_9]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_10]": "{{< /AppElement >}}"
+}

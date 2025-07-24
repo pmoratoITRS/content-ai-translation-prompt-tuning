@@ -1,0 +1,17 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/concurrent-monitoring/configuring-concurrent-monitoring",
+  "[IMAGE_URL_1]": "/img/content/02eab63b-f99e-4738-9f62-686cc0662e44.png",
+  "[LINK_URL_1]": "/support/kb/synthetic-monitoring/gelijktijdige-monitoring/hoe-werkt-gelijktijdige-monitoring",
+  "[LINK_URL_2]": "/support/kb/synthetic-monitoring/gelijktijdige-monitoring/fouten-en-alerting-gelijktijdige-controleregels",
+  "[LINK_URL_3]": "[IMAGE_URL_1]",
+  "[LINK_URL_4]": "/support/kb/synthetic-monitoring/gelijktijdige-monitoring/resultaten-gelijktijdige-monitoring-begrijpen",
+  "[LINK_URL_5]": "/support/kb/alerting/fouten/onbevestigde-en-bevestigde-fouten",
+  "[LINK_URL_6]": "{{< AppUrl >}}/Report/Probes",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}"
+}

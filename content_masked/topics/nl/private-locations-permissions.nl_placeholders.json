@@ -1,0 +1,16 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/checkpoints/private-locations/private-locations-permissions",
+  "[IMAGE_URL_1]": "/img/content/gif-private-locations-permissions.gif",
+  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/checkpoints/private-locations/private-locations-overview\" lang=\"nl\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/checkpoints\" lang=\"nl\" >}}",
+  "[LINK_URL_3]": "[IMAGE_URL_1]",
+  "[SHORTCODE_1]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}"
+}

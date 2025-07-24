@@ -1,0 +1,8 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/dashboards-and-reporting/dashboards/predefined-dashboards",
+  "[IMAGE_URL_1]": "/img/content/scr_dashboard-overview.min.png",
+  "[LINK_URL_1]": "[IMAGE_URL_1]",
+  "[SHORTCODE_1]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}"
+}

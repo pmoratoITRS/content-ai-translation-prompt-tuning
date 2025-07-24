@@ -1,0 +1,10 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/api-monitoring/multi-step-comparison-operations",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/api-monitoring/multi-step\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/api-monitoring/multi-step-sources\" lang=\"de\" >}}",
+  "[INLINE_CODE_1]": "`null`",
+  "[INLINE_CODE_2]": "`\"source\": null`",
+  "[INLINE_CODE_3]": "`null`",
+  "[HTML_TAG_1]": "< Ziel muss wahr sein.\n\n-   **Ist kleiner als oder gleich**: Quell- und Zielwert müssen beide eine Zahl sein und die Bedingung Quelle <= Ziel muss wahr sein.\n\n-   **Ist größer als**: Quell- und Zielwert müssen beide eine Zahl sein und die Bedingung Quelle >"
+}

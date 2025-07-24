@@ -1,0 +1,19 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/dashboards-and-reporting/status-pages/protected-status-page-configuration",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/dashboards-and-reporting/status-pages/public-status-page-configuration\" lang=\"en\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/dashboards-and-reporting/status-pages/public-status-page-configuration#customize\" lang=\"en\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/account/users/operators/operator-groups\" lang=\"en\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/account/users/operators/permissions\" lang=\"en\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"contact\" lang=\"en\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"deletebutton\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"deletebutton\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[SHORTCODE_9]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_10]": "{{< /AppElement >}}"
+}

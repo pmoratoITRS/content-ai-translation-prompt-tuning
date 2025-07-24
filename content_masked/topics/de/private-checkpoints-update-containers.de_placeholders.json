@@ -1,0 +1,12 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/checkpoints/private-checkpoints-update-containers",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/checkpoints/private-locations/install-docker-private-checkpoints#script-content\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/checkpoints/private-locations/install-docker-private-checkpoints\" lang=\"de\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/checkpoints/private-locations/private-checkpoints-faq#two-default-private-checkpoints\" lang=\"de\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[INLINE_CODE_1]": "`docker-compose pull`",
+  "[INLINE_CODE_2]": "`docker-compose down`",
+  "[INLINE_CODE_3]": "`docker-compose up`"
+}

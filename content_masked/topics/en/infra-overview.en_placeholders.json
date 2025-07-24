@@ -1,0 +1,14 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/infra/infra-overview",
+  "[IMAGE_URL_1]": "/img/content/scr_infra-part-of-main-menu-with-trial-option.png",
+  "[LINK_URL_1]": "[IMAGE_URL_1]",
+  "[LINK_URL_2]": "/support/kb/infra/agent",
+  "[LINK_URL_3]": "/support/kb/infra/setting-up-thresholds-and-alerts",
+  "[LINK_URL_4]": "/support/kb/infra/cloud-monitoring-security",
+  "[LINK_URL_5]": "/support/kb/infra/api",
+  "[SHORTCODE_1]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}"
+}

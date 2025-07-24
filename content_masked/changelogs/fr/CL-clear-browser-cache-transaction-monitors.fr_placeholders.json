@@ -1,0 +1,8 @@
+{
+  "[URL_BASE_CHANGELOG]": "/changelog/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/january-2025-clear-browser-cache-transaction-monitors",
+  "[IMAGE_URL_1]": "/img/content/gif-transaction-clear-browser-cache.gif",
+  "[LINK_URL_1]": "{{< ref path=\"/support/kb/synthetic-monitoring/transactions/transactions-overview\" lang=\"fr\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/transactions/understanding-the-step-editor\" lang=\"fr\" >}}",
+  "[LINK_URL_3]": "[IMAGE_URL_1]"
+}

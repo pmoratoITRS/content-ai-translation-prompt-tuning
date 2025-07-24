@@ -1,0 +1,13 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/rum/median-values-used-in-rum",
+  "[IMAGE_URL_1]": "/img/content/scr_RUM-tile-median-average.min.png",
+  "[LINK_URL_1]": "/produkte/real-user-monitoring",
+  "[LINK_URL_2]": "https://en.wikipedia.org/wiki/Histogram",
+  "[LINK_URL_3]": "https://support.google.com/analytics/answer/2637192?hl=en",
+  "[LINK_URL_4]": "[IMAGE_URL_1]",
+  "[SHORTCODE_1]": "{{< AppElement type=\"iconTileSettings\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"button\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}"
+}

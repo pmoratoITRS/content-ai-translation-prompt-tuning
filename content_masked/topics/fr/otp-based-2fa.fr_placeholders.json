@@ -1,0 +1,19 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/transactions/otp-based-2fa",
+  "[IMAGE_URL_1]": "/img/content/scr-otp-selection-transaction-nm.min.png",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/sms-based-2fa\" lang=\"fr\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/account/vault\" lang=\"fr\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/using-sensitive-transaction-data-stored-in-the-vault\" lang=\"fr\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"contact\" lang=\"fr\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/using-sensitive-transaction-data-stored-in-the-vault\" lang=\"fr\" >}}",
+  "[LINK_URL_6]": "{{< ref path=\"/support/kb/account/vault#adding-a-new-item-to-the-vault\" lang=\"fr\" >}}",
+  "[LINK_URL_7]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/using-sensitive-transaction-data-stored-in-the-vault\" lang=\"fr\" >}}",
+  "[LINK_URL_8]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/page-interactions#set\" lang=\"fr\" >}}",
+  "[LINK_URL_9]": "[IMAGE_URL_1]",
+  "[LINK_URL_10]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/Understanding-transaction-monitor-count-calculations\" lang=\"fr\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"iconTileSettings\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"button\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}"
+}

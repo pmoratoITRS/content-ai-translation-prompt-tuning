@@ -1,0 +1,21 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/account/users/sub-accounts/deleting-a-sub-account",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/account/users/sub-accounts/sub-account-operator-management\" lang=\"de\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"buttonPrimary\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[SHORTCODE_9]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_10]": "{{< /AppElement >}}",
+  "[SHORTCODE_11]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_12]": "{{< /AppElement >}}",
+  "[SHORTCODE_13]": "{{< AppElement type=\"deletebutton\" >}}",
+  "[SHORTCODE_14]": "{{< /AppElement >}}",
+  "[SHORTCODE_15]": "{{< AppElement type=\"deletebutton\" >}}",
+  "[SHORTCODE_16]": "{{< /AppElement >}}"
+}

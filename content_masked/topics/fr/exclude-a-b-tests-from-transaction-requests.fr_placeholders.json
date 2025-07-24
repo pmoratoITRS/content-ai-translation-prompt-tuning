@@ -1,0 +1,14 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/transactions/exclude-a-b-tests-from-transaction-requests",
+  "[IMAGE_URL_1]": "/img/content/a4b1a632-8d99-42c8-886a-52ebb04644cf.png",
+  "[LINK_URL_1]": "[IMAGE_URL_1]",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< callout >}}",
+  "[SHORTCODE_4]": "{{< /callout >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}"
+}

@@ -1,0 +1,12 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/account/users/operators/api-user-overview",
+  "[IMAGE_URL_1]": "/img/content/gif-api-user-overview.gif",
+  "[LINK_URL_1]": "https://app.uptrends.com/Hubs/UserManagement",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/account/users/operators/operator-API-management\" lang=\"nl\" >}}",
+  "[LINK_URL_3]": "[IMAGE_URL_1]",
+  "[SHORTCODE_1]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"buttonPrimary\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}"
+}

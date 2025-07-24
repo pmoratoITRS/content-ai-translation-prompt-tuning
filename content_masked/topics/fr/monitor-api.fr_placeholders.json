@@ -1,0 +1,20 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/api/monitor-api",
+  "[LINK_URL_1]": "https://api.uptrends.com/v4/swagger/index.html?url=/v4/swagger/v1/swagger.json#/Monitor",
+  "[LINK_URL_2]": "/support/kb/api/les-champs-de-api-moniteur",
+  "[LINK_URL_3]": "/support/kb/api/monitorcheck-api",
+  "[LINK_URL_4]": "/support/kb/api/monitorgroup-api",
+  "[LINK_URL_5]": "/support/kb/api/periodes-de-maintenance-dans-api",
+  "[INLINE_CODE_1]": "`GET /Monitor`",
+  "[INLINE_CODE_2]": "`GET /Monitor/1d2f5fac-730c-45b0-a077-4ab82aaee14e`",
+  "[INLINE_CODE_3]": "`MonitorGuid`",
+  "[INLINE_CODE_4]": "`IsActive`",
+  "[INLINE_CODE_5]": "`PATCH /Monitor/1d2f5fac-730c-45b0-a077-4ab82aaee14e`",
+  "[INLINE_CODE_6]": "`IsActive`",
+  "[INLINE_CODE_7]": "`PUT /Monitor/1d2f5fac-730c-45b0-a077-4ab82aaee14e`",
+  "[INLINE_CODE_8]": "`POST /Monitor`",
+  "[INLINE_CODE_9]": "`DELETE /Monitor/1d2f5fac-730c-45b0-a077-4ab82aaee14e`",
+  "[INLINE_CODE_10]": "`POST /Monitor/1d2f5fac-730c-45b0-a077-4ab82aaee14e/Clone?includeMaintenancePeriods=false&includeMonitorGroups=true`",
+  "[URL_1]": "https://galacticresorts.com\""
+}

@@ -1,0 +1,12 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/transactions/understanding-your-transactions",
+  "[IMAGE_URL_1]": "/img/content/3604c5bd-5c6e-4f07-acd7-0010408a7f18.png",
+  "[IMAGE_URL_2]": "/img/content/fc2b70c0-8ecf-4071-8f2b-67b3be0aa537.png",
+  "[LINK_URL_1]": "[IMAGE_URL_1]",
+  "[LINK_URL_2]": "[IMAGE_URL_2]",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/choosing-which-transactions-you-can-or-should-test\" lang=\"nl\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/transactions/transaction-monitoring-caveats-tips-and-tricks\" lang=\"nl\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/monitor-mode\" lang=\"nl\" >}}",
+  "[LINK_URL_6]": "{{< ref path=\"contact\" lang=\"nl\" >}}"
+}

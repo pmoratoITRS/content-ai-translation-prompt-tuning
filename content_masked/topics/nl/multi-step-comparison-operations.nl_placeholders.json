@@ -1,0 +1,11 @@
+{
+  "[FRONTMATTER_URL]": "support/kb/synthetic-monitoring/api-monitoring/vergelijkingsoperatoren-in-multi-step-monitoring",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/api-monitoring/multi-step-comparison-operations",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/api-monitoring/multi-step\" lang=\"nl\" >}}, moet u definiëren wat voor soort controle wij moeten uitvoeren. Kies een van de onderstaande opties. In de beschrijving van elke optie verwijst *source* naar de waarde van het HTTP-responskenmerk dat u wilt inspecteren; *target value* is de vaste waarde waarmee we vergelijken.\n\n-   **Is gelijk aan**: de bron moet gelijk zijn aan de doelwaarde. We voeren een niet-hoofdlettergevoelige vergelijking uit.\n\n-   **Is niet gelijk aan**: de bron mag NIET gelijk zijn aan de doelwaarde. We voeren een niet-hoofdlettergevoelige vergelijking uit.\n\n-   **Bevat**: de bron moet de doelwaarde bevatten. De bron- en doelwaarden worden beide geïnterpreteerd als tekst (zelfs als ze alleen een getal bevatten",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/api-monitoring/multi-step-sources\" lang=\"nl\" >}}",
+  "[INLINE_CODE_1]": "`\"source\": \"\"`",
+  "[INLINE_CODE_2]": "`null`",
+  "[INLINE_CODE_3]": "`\"source\": null`",
+  "[INLINE_CODE_4]": "`null`",
+  "[HTML_TAG_1]": "< doel moet waar zijn.\n\n-   **Is kleiner dan of gelijk aan**: bron- en doelwaarde moeten beide een getal zijn en de voorwaarde bron <= doel moet waar zijn.\n\n-   **Is groter dan**: bron- en doelwaarde moeten beide een getal zijn en de voorwaarde bron >"
+}

@@ -1,0 +1,18 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitoring-results/interpreting-the-results-of-the-waterfall-report",
+  "[IMAGE_URL_1]": "/img/content/3125b678-4eb5-43fd-a50d-d2c1b2da3e0e.jpg",
+  "[IMAGE_URL_2]": "/img/content/2fc286e2-26d2-4b40-96f8-462734d4c509.png",
+  "[IMAGE_URL_3]": "/img/content/68f3ff2b-15a3-4f5d-b1be-233bd9ca55e2.png",
+  "[IMAGE_URL_4]": "/img/content/eed630d9-4882-441f-a303-8bdc9fefbfc1.png",
+  "[IMAGE_URL_5]": "/img/content/97c81084-da4f-4099-b53f-e4bbd90bcc6a.png",
+  "[IMAGE_URL_6]": "/img/content/7213b1fb-861b-4b93-b85a-d03085b191a2.png",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/waterfall-chart#where-is-the-waterfall-chart-located\" lang=\"fr\" >}}",
+  "[LINK_URL_2]": "/support/kb/alerter/erreurs/types-erreurs",
+  "[LINK_URL_3]": "[IMAGE_URL_1]",
+  "[LINK_URL_4]": "[IMAGE_URL_2]",
+  "[LINK_URL_5]": "[IMAGE_URL_3]",
+  "[LINK_URL_6]": "[IMAGE_URL_4]",
+  "[LINK_URL_7]": "[IMAGE_URL_5]",
+  "[LINK_URL_8]": "[IMAGE_URL_6]"
+}

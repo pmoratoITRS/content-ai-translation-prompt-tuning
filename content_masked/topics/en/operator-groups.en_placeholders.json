@@ -1,0 +1,14 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/account/users/operators/operator-groups",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/account/users/operators\" lang=\"en\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/alerting/create-alert-definitions\" lang=\"en\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/account/users/operators/permissions\" lang=\"en\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"buttonSecondary\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< ref path=\"/support/kb/account/users/operators/user-management-hub\" lang=\"en\" >}}"
+}

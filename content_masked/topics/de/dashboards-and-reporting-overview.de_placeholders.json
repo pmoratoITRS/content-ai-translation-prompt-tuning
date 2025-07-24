@@ -1,0 +1,14 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/dashboards-and-reporting/dashboards-and-reporting-overview",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/dashboards-and-reporting/dashboards\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/dashboards-and-reporting/dashboards/predefined-dashboards\" lang=\"de\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/dashboards-and-reporting/dashboards/custom-report-tiles\" lang=\"de\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/dashboards-and-reporting/sla/working-with-sla-data-and-reports\" lang=\"de\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"support/kb/dashboards-and-reporting/sla/setting-up-an-sla\" lang=\"de\" >}}",
+  "[LINK_URL_6]": "{{< ref path=\"support/kb/dashboards-and-reporting/status-pages/public-and-protected-status-pages\" lang=\"de\" >}}",
+  "[LINK_URL_7]": "{{< ref path=\"support/kb/dashboards-and-reporting/dashboards/exporting-dashboard-data\" lang=\"de\" >}}",
+  "[LINK_URL_8]": "{{< ref path=\"support/kb/dashboards-and-reporting/grafana\" lang=\"de\" >}}",
+  "[SHORTCODE_1]": "{{< AppElement type=\"menuitem\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}"
+}

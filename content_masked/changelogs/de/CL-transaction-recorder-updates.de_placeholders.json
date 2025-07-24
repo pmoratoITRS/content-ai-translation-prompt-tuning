@@ -1,0 +1,11 @@
+{
+  "[URL_BASE_CHANGELOG]": "/changelog/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/changelog/june-2024-transaction-recorder-updates",
+  "[IMAGE_URL_1]": "/img/content/scr-recorder-context-menu.min.png",
+  "[LINK_URL_1]": "{{< ref path=\"/features/transaction-recorder\" lang=\"de\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/transactions/page-interactions#hover\" lang=\"de\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"/support/kb/synthetic-monitoring/transactions/content-checks#wait-for-element\" lang=\"de\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"/support/kb/synthetic-monitoring/transactions/content-checks#test-document-content\" lang=\"de\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"/support/kb/synthetic-monitoring/transactions/page-interactions#key-event\" lang=\"de\" >}}",
+  "[LINK_URL_6]": "[IMAGE_URL_1]"
+}

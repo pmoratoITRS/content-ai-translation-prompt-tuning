@@ -1,0 +1,19 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/monitor-settings/browser-types",
+  "[LINK_URL_1]": "{{< ref path=\"/checkpoints\" lang=\"nl\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/synthetic-monitoring/monitor-settings/user-agents-and-real-browser-checks\" lang=\"nl\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/w3c-navigation-timings\" lang=\"nl\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/core-web-vitals\" lang=\"nl\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/timeline-screenshots\" lang=\"nl\" >}}",
+  "[LINK_URL_6]": "{{< ref path=\"support/kb/synthetic-monitoring/monitoring-results/extra-metrics-and-features\" lang=\"nl\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[SHORTCODE_3]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_4]": "{{< /AppElement >}}",
+  "[SHORTCODE_5]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_6]": "{{< /AppElement >}}",
+  "[SHORTCODE_7]": "{{< AppElement type=\"tab\" >}}",
+  "[SHORTCODE_8]": "{{< /AppElement >}}",
+  "[ANCHOR_1]": "{id=\"chrome-extra-metrics\"}"
+}

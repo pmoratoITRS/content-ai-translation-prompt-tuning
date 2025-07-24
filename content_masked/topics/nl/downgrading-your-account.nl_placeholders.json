@@ -1,0 +1,9 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/account/payments-and-subscriptions/downgrading-your-account",
+  "[LINK_URL_1]": "{{< ref path=\"/support/kb/account/payments-and-subscriptions/upgrading-your-account\" lang=\"nl\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"pricing\" lang=\"nl\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"contact\" lang=\"nl\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"/support/kb/dashboards-and-reporting/dashboards/exporting-dashboard-data\" lang=\"nl\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"contact\" lang=\"nl\" >}}"
+}

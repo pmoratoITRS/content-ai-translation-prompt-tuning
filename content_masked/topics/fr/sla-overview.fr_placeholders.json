@@ -1,0 +1,10 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/sla/sla-overview",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/dashboards-and-reporting/sla/setting-up-an-sla\" lang=\"fr\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"support/kb/dashboards-and-reporting/sla/working-with-multiple-SLA-definitions\" lang=\"fr\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/dashboards-and-reporting/sla/working-with-sla-data-and-reports\" lang=\"fr\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/dashboards-and-reporting/sla/missing-sla-overview-data\" lang=\"fr\" >}}",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}"
+}

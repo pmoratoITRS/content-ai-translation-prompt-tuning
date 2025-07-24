@@ -1,0 +1,13 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/account/sso-setup-guide",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/account/settings/sso-setup-guide\" lang=\"fr\" >}}",
+  "[LINK_URL_2]": "https://fr.wikipedia.org/wiki/Security_Assertion_Markup_Language",
+  "[LINK_URL_3]": "/tarifs",
+  "[LINK_URL_4]": "/contact",
+  "[LINK_URL_5]": "/support/kb/coffre-fort",
+  "[SHORTCODE_1]": "{{< AppElement type=\"savebutton\" >}}",
+  "[SHORTCODE_2]": "{{< /AppElement >}}",
+  "[INLINE_CODE_1]": "`<md:SingleSignOnService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST\" Location=\"https://your-idp.your-organization/your-app\" />`",
+  "[INLINE_CODE_2]": "`<ds:X509Certificate>`"
+}

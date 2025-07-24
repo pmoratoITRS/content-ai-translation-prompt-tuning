@@ -1,0 +1,13 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/synthetic-monitoring/uptime-monitoring/uptime-monitoring-overview",
+  "[LINK_URL_1]": "{{< ref path=\"support/kb/basics/monitor-types\" lang=\"fr\" >}}",
+  "[LINK_URL_2]": "{{< ref path=\"/support/kb/synthetic-monitoring/uptime-monitoring/http-and-https/http-and-https-overview\" lang=\"fr\" >}}",
+  "[LINK_URL_3]": "{{< ref path=\"support/kb/synthetic-monitoring/uptime-monitoring/network-checks\" lang=\"fr\" >}}",
+  "[LINK_URL_4]": "{{< ref path=\"support/kb/synthetic-monitoring/uptime-monitoring/network-checks\" lang=\"fr\" >}}",
+  "[LINK_URL_5]": "{{< ref path=\"support/kb/synthetic-monitoring/uptime-monitoring/database-server-monitors\" lang=\"fr\" >}}",
+  "[LINK_URL_6]": "{{< ref path=\"support/kb/synthetic-monitoring/uptime-monitoring/mail-server-monitors\" lang=\"fr\" >}}",
+  "[LINK_URL_7]": "{{< ref path=\"/support/kb/synthetic-monitoring/uptime-monitoring/ftp-and-sftp\" lang=\"fr\" >}}",
+  "[LINK_URL_8]": "{{< ref path=\"/support/kb/account/payments-and-subscriptions/adding-extra-monitors-and-sms\" lang=\"fr\" >}}",
+  "[ANCHOR_1]": "{id=\"network-server-monitors\"}"
+}

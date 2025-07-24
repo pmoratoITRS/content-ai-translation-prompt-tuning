@@ -1,0 +1,12 @@
+{
+  "[URL_BASE_TOPICS]": "/support/kb/",
+  "[FRONTMATTER_TRANSLATIONKEY]": "https://www.uptrends.com/support/kb/basics/auto-login",
+  "[LINK_URL_1]": "https://www.w3schools.com/tags/ref_urlencode.asp",
+  "[SHORTCODE_1]": "{{< callout >}}",
+  "[SHORTCODE_2]": "{{< /callout >}}",
+  "[INLINE_CODE_1]": "`https://app.uptrends.com/Account/DirectLogin?username=<username>&password=<password>`",
+  "[INLINE_CODE_2]": "`https://app.uptrends.com/Account/DirectLogin?username=<username>&password=<password>&returnurl=/Report/Operations`",
+  "[INLINE_CODE_3]": "`Ma%C3%ABl`",
+  "[INLINE_CODE_4]": "`123%40GZ%2198`",
+  "[INLINE_CODE_5]": "`https://app.uptrends.com/Account/DirectLogin?username=Ma%C3%ABl&password=123%40GZ%2198`"
+}
